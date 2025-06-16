@@ -1,0 +1,1136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Danh Sach</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="TNG office">
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body data-theme="light" class="font-nunito">
+
+    <div id="wrapper" class="theme-cyan">
+
+        <!-- Page Loader -->
+        <div class="page-loader-wrapper">
+            <div class="loader">
+                <div class="m-t-30"><img src="assets/images/logo-icon.svg" width="48" height="48" alt="Iconic"></div>
+                <p>Please wait...</p>
+            </div>
+        </div>
+
+        <!-- Top navbar div start -->
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-bars"></i></button>
+                    <button type="button" class="btn-toggle-fullwidth"><i class="fa fa-bars"></i></button>
+                    <a href=""><img src="assets/images/logo.png" width="48" height="48" alt="logo"></a>
+                </div>
+                <ul class="navbar-center">
+                    <li class="nav-item nhacnhoBtn numberShaking-basic" style="cursor:pointer" onclick="NhacNho.Show()">
+                        <a href="javascript:void(0)"><i class="fa fa-calendar-minus-o " aria-hidden="true"></i> Nhắc
+                            việc</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#/VanBanNoiBo"><i class="fa fa-retweet"></i>VB nội bộ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#/VanBan/VanBanDen/TraCuu"><i class="fa fa-download"></i>VB đến</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#/VanBanDi"><i class="fa fa-upload"></i>VB đi</a>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <div id="navbar-menu">
+                        <ul class="nav navbar-nav">
+                            <li class="changemode">
+                                <label class="toggle-switch theme-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-switch-slider"></span>
+                                </label>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" title="add on"
+                                    data-toggle="dropdown">
+                                    <i class="icon-grid"></i>
+                                </a>
+                                <ul class="dropdown-menu menu-addon">
+                                    <li>
+                                        <a href="#Dashboard"><i class="fa fa-file"></i><span>Dashboard</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="has-arrow"><i class="fa fa-dashboard"></i><span>Tài liệu
+                                                ngành</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa fa-database"></i><span>Kho lưu trữ</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="has-arrow"><i class="fa fa fa-tasks"></i><span>Giao
+                                                việc</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="has-arrow"><i class="fa fa-recycle"></i><span>Quy
+                                                trình</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="has-arrow"><i class="fa fa-paper-plane"></i><span>Đề
+                                                xuất</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="has-arrow"><i class="fa fa-cubes"></i><span>Dự án</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                    <i class="fa fa-bell"></i>
+                                    <span class="notification-dot"></span>
+                                </a>
+                                <ul class="dropdown-menu notifications">
+                                    <li class="header"><strong>You have 4 new Notifications</strong></li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-info text-warning"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">Campaign <strong>Holiday Sale</strong> is nearly
+                                                        reach budget limit.</p>
+                                                    <span class="timestamp">10:00 AM Today</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-like text-success"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">Your New Campaign <strong>Holiday Sale</strong> is
+                                                        approved.</p>
+                                                    <span class="timestamp">11:30 AM Today</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-pie-chart text-info"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">Website visits from Twitter is 27% higher than last
+                                                        week.</p>
+                                                    <span class="timestamp">04:00 PM Today</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-info text-danger"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">Error on website analytics configurations</p>
+                                                    <span class="timestamp">Yesterday</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="footer"><a href="javascript:void(0);" class="more">See all
+                                            notifications</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" title="add on"
+                                    data-toggle="dropdown" aria-expanded="true">
+                                    <i class="icon-magic-wand"></i>
+                                </a>
+                                <div class="dropdown-menu p-3" id="setting">
+                                    <h6>Choose Skin</h6>
+                                    <ul class="choose-skin list-unstyled">
+                                        <li data-theme="purple">
+                                            <div class="purple"></div>
+                                        </li>
+                                        <li data-theme="blue">
+                                            <div class="blue"></div>
+                                        </li>
+                                        <li data-theme="cyan" class="active">
+                                            <div class="cyan"></div>
+                                        </li>
+                                        <li data-theme="green">
+                                            <div class="green"></div>
+                                        </li>
+                                        <li data-theme="orange">
+                                            <div class="orange"></div>
+                                        </li>
+                                        <li data-theme="blush">
+                                            <div class="blush"></div>
+                                        </li>
+                                        <li data-theme="red">
+                                            <div class="red"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main left menu -->
+        <div id="left-sidebar" class="sidebar">
+            <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-arrow-left"></i></button>
+            <div class="sidebar-scroll">
+                <div class="user-account">
+                    <img src="assets/images/user.jpg" class="rounded-circle user-photo" alt="User Profile Picture">
+                    <div class="dropdown">
+                        <span>Welcome,</span>
+                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>
+                                Nguyễn Thị Kim Thoa</strong></a>
+                        <ul class="dropdown-menu dropdown-menu-right account">
+                            <li><a class="dropdown-content" href="javascript:void(0)"
+                                    onclick="TaiKhoan.ViewDoiMatKhau()"><i class="icon-lock"></i>Đổi mật khẩu</a></li>
+                            <li><a class="dropdown-content" href="javascript:void(0)"
+                                    onclick="TaiKhoan.ViewThongTin('thoantt')"><i class=" icon-note"></i>Cập nhập thông
+                                    tin</a></li>
+                            <li><a class="dropdown-content" href="javascript:void(0)"
+                                    onclick="TaiKhoan.ViewAvatar('thoantt')"><i class="icon-picture"></i>Cập nhập ảnh
+                                    đại diện</a></li>
+                            <li><a class="dropdown-content" href="javascript:void(0)"
+                                    onclick="ThietlaplayOut.ViewChonLayout()"><i class="icon-settings"></i>Chọn
+                                    layout</a></li>
+                            <li class="divider"></li>
+                            <li><a class="dropdown-content" href="javascript:void(0)" onclick="TaiKhoan.DangXuat()"><i
+                                        class="icon-power"></i>Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#setting"><i
+                                class="icon-settings"></i></a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content padding-0">
+                    <div class="tab-pane active" id="menu">
+                        <nav id="left-sidebar-nav" class="sidebar-nav">
+                            <ul id="main-menu" class="metismenu li_animation_delay">
+                                <li >
+                                    <a href="styleguide.html" aria-expanded="false"><i class="fa fa-diamond"></i><span>Style guide</span></a>
+                                </li>
+                                <li  class="active">
+                                    <a href="listdanhsach.html" aria-expanded="false"><i class="fa fa-search"></i><span>Danh sách tìm kiếm</span></a>
+                                </li>
+                                <li>
+                                    <a href="mywork.html" aria-expanded="false"><i class="fa fa-trello"></i><span>Công việc của tôi</span></a>
+                                </li>
+                                <li class="">
+                                    <a href="login.html" aria-expanded="false"><i class="fa fa-user"></i><span>Login</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="tab-pane" id="Chat">
+                        <form>
+                            <div class="input-group m-b-20">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search...">
+                            </div>
+                        </form>
+                        <ul class="right_chat list-unstyled li_animation_delay">
+                            <li>
+                                <a href="javascript:void(0);" class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar1.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name d-flex justify-content-between">Chris Fox <i
+                                                class="fa fa-heart-o font-12"></i></span>
+                                        <span class="message">chrisfox@gmail.com</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar2.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name d-flex justify-content-between">Joge Lucky <i
+                                                class="fa fa-heart-o font-12"></i></span>
+                                        <span class="message">Jogelucky@gmail.com</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar3.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name d-flex justify-content-between">Isabella <i
+                                                class="fa fa-heart-o font-12"></i></span>
+                                        <span class="message">Isabella@gmail.com</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar4.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name d-flex justify-content-between">Folisise Chosielie <i
+                                                class="fa fa-heart font-12"></i></span>
+                                        <span class="message">FolisiseChosielie@gmail.com</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="media">
+                                    <img class="media-object" src="assets/images/xs/avatar5.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name d-flex justify-content-between">Alexander <i
+                                                class="fa fa-heart-o font-12"></i></span>
+                                        <span class="message">Alexander@gmail.com</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="setting">
+                        <h6>Choose Skin</h6>
+                        <ul class="choose-skin list-unstyled">
+                            <li data-theme="purple">
+                                <div class="purple"></div>
+                            </li>
+                            <li data-theme="blue">
+                                <div class="blue"></div>
+                            </li>
+                            <li data-theme="cyan" class="active">
+                                <div class="cyan"></div>
+                            </li>
+                            <li data-theme="green">
+                                <div class="green"></div>
+                            </li>
+                            <li data-theme="orange">
+                                <div class="orange"></div>
+                            </li>
+                            <li data-theme="blush">
+                                <div class="blush"></div>
+                            </li>
+                            <li data-theme="red">
+                                <div class="red"></div>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled font_setting mt-3">
+                            <li>
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" name="font" value="font-nunito"
+                                        checked="">
+                                    <span class="custom-control-label">Nunito Google Font</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" name="font" value="font-ubuntu">
+                                    <span class="custom-control-label">Ubuntu Font</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" name="font" value="font-raleway">
+                                    <span class="custom-control-label">Raleway Google Font</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" name="font" value="font-IBMplex">
+                                    <span class="custom-control-label">IBM Plex Google Font</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled mt-3">
+                            <li class="d-flex align-items-center mb-2">
+                                <label class="toggle-switch theme-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-switch-slider"></span>
+                                </label>
+                                <span class="ml-3">Enable Dark Mode!</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <label class="toggle-switch theme-rtl">
+                                    <input type="checkbox">
+                                    <span class="toggle-switch-slider"></span>
+                                </label>
+                                <span class="ml-3">Enable RTL Mode!</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <label class="toggle-switch theme-high-contrast">
+                                    <input type="checkbox">
+                                    <span class="toggle-switch-slider"></span>
+                                </label>
+                                <span class="ml-3">Enable High Contrast Mode!</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="question">
+                        <form>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search...">
+                            </div>
+                        </form>
+                        <ul class="list-unstyled question">
+                            <li class="menu-heading">HOW-TO</li>
+                            <li><a href="javascript:void(0);">How to Create Campaign</a></li>
+                            <li><a href="javascript:void(0);">Boost Your Sales</a></li>
+                            <li><a href="javascript:void(0);">Website Analytics</a></li>
+                            <li class="menu-heading">ACCOUNT</li>
+                            <li><a href="javascript:void(0);">Cearet New Account</a></li>
+                            <li><a href="javascript:void(0);">Change Password?</a></li>
+                            <li><a href="javascript:void(0);">Privacy &amp; Policy</a></li>
+                            <li class="menu-heading">BILLING</li>
+                            <li><a href="javascript:void(0);">Payment info</a></li>
+                            <li><a href="javascript:void(0);">Auto-Renewal</a></li>
+                            <li class="menu-button mt-3">
+                                <a href="../docs/index.html" class="btn btn-primary btn-block">Documentation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main right menu -->
+        <div id="right-sidebar" class="sidebar right">
+            <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-arrow-left"></i></button>
+            <div class="sidebar-scroll">
+
+                <div class="tab-content padding-0">
+                    <div class="tab-pane active" id="menu">
+                        <nav id="right-sidebar-nav" class="sidebar-nav">
+                            <div class="no-padding boloc-congviec">
+                                <div class="d-flex header justify-content-between align-items-center pt-3">
+                                    <h5 class="title mb-0">Bộ lọc</h5>
+                                    <a class="btn-close btn btn-outline-secondary"><i class="fa fa-times"
+                                            aria-hidden="true"></i></a>
+                                </div>
+                                <hr>
+                                <div class="form body form-filter">
+                                    <form id="frmBoLocCongViec">
+                                        <div class="form-group">
+                                            <label for="timkiem">Tìm kiếm</label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text fa fa-search"></span>
+                                                </div>
+                                                <input type="text" id="timkiem" class="form-control"
+                                                    placeholder="Tìm kiếm theo tên, mô tả" aria-label="Tìm kiếm"
+                                                    aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Tác vụ</label>
+                                            <div class="input-group mb-3">
+                                                <select name="tacVu" class="form-control custom-select">
+                                                    <option value="0">Tất cả</option>
+                                                    <option value="1" selected="">Giao</option>
+                                                    <option value="2">Thực hiện</option>
+                                                    <option value="3">Theo dõi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="selected-TrangThai" class="form-group">
+                                            <label class="control-label">Trạng thái</label>
+                                            <div class="c_multiselect">
+                                                <select id="multiselect1" name="multiselect1[]" class="multiselect"
+                                                    multiple="multiple">
+                                                    <option value="0">Tất cả</option>
+                                                    <option value="106">Cần làm</option>
+                                                    <option value="107" selected>Đang làm</option>
+                                                    <option value="108" selected>Chờ đánh giá</option>
+                                                    <option value="109">Hoàn thành</option>
+                                                    <option value="110">Đã hủy</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex gap8 pr-8">
+                                            <div class="col-6 p-0">
+                                                <label class="control-label">Thực hiện từ ngày </label>
+                                                <div class="input-group date" data-date-autoclose="true"
+                                                    data-provide="datepicker">
+                                                    <input type="text" name="batDauTuNgay" class="form-control"
+                                                        name="batDauDenNgay" value="05/15/2025">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-secondary" type="button"><i
+                                                                class="fa fa-calendar"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-0">
+                                                <label class="control-label">Đến ngày</label>
+                                                <div class="input-group date" data-date-autoclose="true"
+                                                    data-provide="datepicker">
+                                                    <input type="text" class="form-control" name="batDauDenNgay"
+                                                        value="05/15/2025">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-secondary" type="button"><i
+                                                                class="fa fa-calendar"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex gap8 pr-8">
+                                            <div class="col-6 p-0">
+                                                <label class="control-label">Thời hạn từ ngày</label>
+                                                <div class="input-group date" data-date-autoclose="true"
+                                                    data-provide="datepicker">
+                                                    <input type="text" name="batDauTuNgay" class="form-control"
+                                                        name="batDauDenNgay" value="05/15/2025">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-secondary" type="button"><i
+                                                                class="fa fa-calendar"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-0">
+                                                <label class="control-label">Đến ngày</label>
+                                                <div class="input-group date" data-date-autoclose="true"
+                                                    data-provide="datepicker">
+                                                    <input type="text" class="form-control" name="batDauDenNgay"
+                                                        value="05/15/2025">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-secondary" type="button"><i
+                                                                class="fa fa-calendar"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Bộ phận</label>
+                                            <div class="input-group mb-3">
+                                                <select name="idBoPhan" class="form-control custom-select" tabindex="-1"
+                                                    aria-hidden="true">
+                                                    <option value="">Tất cả</option>
+                                                    <option value="62">Phòng Phát triển ứng dụng</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Dự án</label>
+                                            <div class="input-group mb-3">
+                                                <select name="idDuAn" class="form-control custom-select">
+                                                    <option value="">Tất cả</option>
+                                                    <option value="52">QLTS MINH ANH</option>
+                                                    <option value="54">TNG LEAGUE</option>
+                                                    <option value="56">QLTS HÀ PHONG</option>
+                                                    <option value="57">KHĐT PMS</option>
+                                                    <option value="58">QLTS SƠN HÀ</option>
+                                                    <option value="59">VPS VITEXCO</option>
+                                                    <option value="73">Bảo hành DCL control</option>
+                                                    <option value="83">VPS X20</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Nguồn</label>
+                                            <div class="input-group mb-3">
+                                                <select name="nguonGoc" class="form-control custom-select">
+                                                    <option value="">Tất cả</option>
+                                                    <option value="1">CV lặp lại</option>
+                                                    <option value="2">CV quy trình</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-12 text-center">
+                                                <button type="button" class="btn btn-danger"
+                                                    onclick="ResetFormBoLocCV()">Reset</button>
+                                                <button type="button" class="btn btn-primary"
+                                                    onclick="CongViec.LuuBoLoc()">Cập nhật</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- rightbar icon div -->
+        <div class="right_icon_bar">
+            <ul>
+                <li><a href="app-inbox.html"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="app-chat.html"><i class="fa fa-comments"></i></a></li>
+                <li><a href="app-calendar.html"><i class="fa fa-calendar"></i></a></li>
+                <li><a href="file-dashboard.html"><i class="fa fa-folder"></i></a></li>
+                <li><a href="app-contact.html"><i class="fa fa-id-card"></i></a></li>
+                <li><a href="blog-list.html"><i class="fa fa-globe"></i></a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-plus"></i></a></li>
+                <li><a href="javascript:void(0);" class="right_icon_btn"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- mani page content body part -->
+        <div id="main-content">
+            <div class="container-fluid">
+                <div class="block-header">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h2>Danh sách (tìm kiếm)</h2>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href=""><i class="fa fa-dashboard"></i></a></li>
+                                <li class="breadcrumb-item active">Danh sách (tìm kiếm)</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 list-btn-CV">
+                            <div class="list-btn-CV">
+                                <div class="page_action gap8 d-flex flex-wrap align-items-center justify-content-end">
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#largeModal">
+                                        <i class="fa fa-plus"></i>
+                                        <span class="label sm-hidden">Tạo mới</span>
+                                    </button>
+                                    <button title="Lịch biểu" class="btn btn-outline-info"
+                                        href="#/GiaoViec/CongViec/LichBieu?lich=CongViecCuaToi">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <span class="label sm-hidden">Lịch biểu</span>
+                                    </button>
+                                    <button title="Quá hạn" class="btn btn-warning" onclick="CongViec.ViewQuaHan()">
+                                        <i class="fa fa-bell numberShaking" aria-hidden="true">
+                                        </i>
+                                        <span class="label sm-hidden">Quá hạn</span>
+                                        <sup class="font-weight-bold">(2)</sup>
+                                    </button>
+                                </div>
+                                <div class="page_action gap8 d-flex flex-wrap align-items-center justify-content-end">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i
+                                            class="fa fa-users" aria-hidden="true"></i> Nhóm</button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-item url " data-urlparam="groupBy" data-value=""
+                                            onclick="addQueryParam(this)">Bỏ chọn</div>
+                                        <div class="dropdown-item url " data-urlparam="groupBy" data-value="duan"
+                                            onclick="addQueryParam(this)">Nhóm theo dự án</div>
+                                        <div class="dropdown-item url" data-urlparam="groupBy" data-value="bophan"
+                                            onclick="addQueryParam(this)">Nhóm theo bộ phận</div>
+                                        <div class="dropdown-item url " data-urlparam="groupBy" data-value="nhanvien"
+                                            onclick="addQueryParam(this)">Nhóm theo nhân viên</div>
+                                        <div class="dropdown-item url " data-urlparam="groupBy" data-value="batdau"
+                                            onclick="addQueryParam(this)">Nhóm theo ngày bắt đầu</div>
+                                        <div class="dropdown-item url " data-urlparam="groupBy" data-value="thoihan"
+                                            onclick="addQueryParam(this)">Nhóm theo thời hạn</div>
+                                    </div>
+                                    <button class="btn btn-outline-secondary dropdown-toggle" id="dropdownOrder"
+                                        data-toggle="dropdown">
+                                        <i class="fa fa-sort" aria-hidden="true"></i>
+                                        <span class="label sm-hidden">Sắp xếp</span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownOrder">
+                                        <div class="dropdown-item url " data-urlparam="order" data-value="clear"
+                                            onclick="addQueryParam(this)">Bỏ chọn</div>
+                                        <div class="dropdown-item url " data-urlparam="order" data-value="start"
+                                            onclick="addQueryParam(this)">Theo thời gian bắt đầu</div>
+                                        <div class="dropdown-item url " data-urlparam="order" data-value="end"
+                                            onclick="addQueryParam(this)">Theo thời hạn</div>
+                                    </div>
+                                    <button class="btn btn-outline-secondary" id="dropdownDuAn" data-toggle="dropdown">
+                                        <i class="fa fa-address-book" aria-hidden="true"></i>
+                                        <span class="label sm-hidden">Dự án</span>
+                                    </button>
+                                    <div class="danhsach-duan dropdown-menu" aria-labelledby="dropdownDuAn">
+                                        <div class="dropdown-item" data-urlparam="idDuAn" data-value="">Tất cả dự án
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="52">QLTS MINH ANH
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="53">PLM_SiRi
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="54">TNG LEAGUE
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="56">QLTS HÀ PHONG
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="57">KHĐT PMS
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="58">QLTS SƠN HÀ
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="59">VPS VITEXCO
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="60">Dự án triển
+                                            khai Vitexco</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="61">Triển khai
+                                            khách hàng X20</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="62">Triển khai
+                                            khách hàng 28.1</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="63">Triển khai
+                                            khách hàng Sơn Hà</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="64">Triển khai
+                                            khách hàng Itas</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="65">Triển khai
+                                            khách hàng Hồ Gươm</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="66">Quản lý KPI
+                                            đánh giá khách hàng</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="67">Đăng kí nghỉ
+                                            phép</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="68">Họp đầu giờ
+                                            tổ trưởng</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="69">DỰ ÁN CRM
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="70">Triển khai
+                                            khách hàng Nhà Bè</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="71">Hợp đồng
+                                            khách hàng ngoài</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="73">Bảo hành DCL
+                                            control</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="74">TNG - NHÂN SỰ
+                                            - CÔNG - LƯƠNG</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="75">Đánh giá nội
+                                            bộ QLCL</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="76">Quản lý chứng
+                                            chỉ</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="77">Nâng cấp báo
+                                            cáo PM Đảng - đoàn</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="78">Cân bằng
+                                            chuyền công nhân</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="79">DỰ ÁN OPEX
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="80">Quản lý tài
+                                            sản</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="81">QLCL - Kiểm
+                                            NPL đầu vào</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="82">Triển khai
+                                            khách hàng Hà Sơn</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="83">VPS X20</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="84">Dự án Theo
+                                            dõi TC CBQL</div>
+                                        <div class="dropdown-item " data-urlparam="idDuAn" data-value="85">Quy hoạch cán
+                                            bộ nâng cấp</div>
+                                    </div>
+                                    <button class="btn btn-outline-secondary" id="dropdownBoPhan"
+                                        data-toggle="dropdown">
+                                        <i class="fa fa-outdent" aria-hidden="true"></i>
+                                        <span class="label sm-hidden">Bộ phận</span>
+                                    </button>
+                                    <div class="danhsach-bophan dropdown-menu" aria-labelledby="dropdownBoPhan">
+                                        <div class="dropdown-item" data-urlparam="idBoPhan" data-value="">Tất cả bộ phận
+                                        </div>
+                                        <div class="dropdown-item " data-urlparam="idBoPhan" data-value="59">Chi nhánh
+                                            Giải pháp công nghệ TRE</div>
+                                        <div class="dropdown-item " data-urlparam="idBoPhan" data-value="60">Ban Giám
+                                            Đốc</div>
+                                        <div class="dropdown-item " data-urlparam="idBoPhan" data-value="61">Phòng Kinh
+                                            doanh và Marketing</div>
+                                        <div class="dropdown-item " data-urlparam="idBoPhan" data-value="62">Phòng Phát
+                                            triển ứng dụng</div>
+                                        <div class="dropdown-item " data-urlparam="idBoPhan" data-value="63">Phòng Công
+                                            nghệ Phần mềm</div>
+                                        <div class="dropdown-item " data-urlparam="idBoPhan" data-value="64">Phòng Quản
+                                            trị mạng</div>
+                                        <div class="dropdown-item " data-urlparam="idBoPhan" data-value="65">Phòng Triển
+                                            khai ERP</div>
+                                        <div class="dropdown-item " data-urlparam="idBoPhan" data-value="66">Phòng Kiểm
+                                            thử phần mềm</div>
+                                        <div class="dropdown-item " data-urlparam="idBoPhan" data-value="67">Phòng Tổng
+                                            hợp</div>
+                                    </div>
+                                    <button class="btn btn-outline-secondary filterbutton" id="filterbutton">
+                                        <i class="fa fa-filter" aria-hidden="true"></i>
+                                        <span class="label">Filter</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="body">
+                                <div class="input-group" id="adv-search">
+                                    <input type="text" class="form-control" placeholder="Search here..." />
+                                    <div class="input-group-btn">
+                                        <div class="btn-group" role="group">
+                                            <div class="dropdown dropdown-lg">
+                                                <button type="button" class="btn btn-default dropdown-toggle"
+                                                    data-toggle="dropdown" aria-expanded="false"><span
+                                                        class="caret"></span></button>
+                                                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <form class="form-horizontal" role="form">
+                                                        <div class="form-group">
+                                                            <label for="filter">Filter by</label>
+                                                            <select class="form-control">
+                                                                <option value="0" selected>All Iconic</option>
+                                                                <option value="1">Featured</option>
+                                                                <option value="2">Most popular</option>
+                                                                <option value="3">Top rated</option>
+                                                                <option value="4">Most commented</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input class="form-control" type="text"
+                                                                placeholder="Author" />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input class="form-control" type="text"
+                                                                placeholder="Contains the words" />
+                                                        </div>
+                                                        <button type="submit"
+                                                            class="btn btn-primary btn-block">Search</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary"><span class="icon-magnifier"
+                                                    aria-hidden="true"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <ul class="nav nav-tabs-new m-b-20">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab"
+                                            href="#Web">Web</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Images">Images</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Videos">Videos</a>
+                                    </li>
+                                </ul>
+                                <p class="mb-0">Search Result For "Bootstrap 4 admin"</p>
+                                <strong> About 16,853 result ( 0.13 seconds)</strong>
+                            </div>
+                        </div>
+                        <div class="tab-content padding-0">
+                            <div class="tab-pane card active" id="Web">
+                                <div class="body">
+                                    <h6 class="mb-0"><a target="_blank" href="javascript:void(0);">sQuare - Bootstrap 4
+                                            Light & Dark Admin with Free Angular5 + UI Kit</a></h6>
+                                    <small>https://themeforest.net/user/wraptheme/portfolio</small>
+                                    <p class="m-t-10">sQuare Admin is Material Design premium admin dashboard theme.
+                                        It’s builded on popular Twitter Bootstrap4 framework. sQuare is fully based on
+                                        HTML5 + CSS3 Standards. Is fully responsive and clean on every device and every
+                                        browser.</p>
+                                    <a class="m-r-20" target="_blank" href="javascript:void(0);">AdminCC</a>
+                                    <a class="m-r-20" target="_blank" href="javascript:void(0);">Swift Admin</a>
+                                </div>
+                                <hr>
+                                <div class="body">
+                                    <h6 class="mb-0"><a target="_blank" href="javascript:void(0);">InfiniO - Bootstrap 4
+                                            Admin Dashboard Template </a></h6>
+                                    <small>https://themeforest.net/user/wraptheme/portfolio</small>
+                                    <p class="m-t-10">InfiniO is fully professional, responsive, modern, multi-purpose
+                                        and featured Admin template which can be used to create various website, Admin
+                                        templates, Admin dashboards, Backend Websites, CMS, CRM or one can aldo build
+                                        Blog, Business website and time line as well as portfolio. InfiniO Admin makes
+                                        the development process easy and fast for you and aims to help you implement
+                                        your idea to real time.</p>
+                                    <a class="m-r-20" target="_blank" href="javascript:void(0);">Oakleaf Admin</a>
+                                    <a class="m-r-20" target="_blank" href="javascript:void(0);">sQuare</a>
+                                </div>
+                                <hr>
+                                <div class="body">
+                                    <h6 class="mb-0"><a target="_blank" href="javascript:void(0);">Compass - The
+                                            ultimate Bootstrap 4 Admin Dashboard </a></h6>
+                                    <small>https://themeforest.net/user/wraptheme/portfolio</small>
+                                    <p class="m-t-10">Compass Admin is Material Design premium admin dashboard theme.
+                                        It’s builded on popular Twitter Bootstrap4 framework. Compass is fully based on
+                                        HTML5 + CSS3 Standards. Is fully responsive and clean on every device and every
+                                        browser.</p>
+                                    <a class="m-r-20" target="_blank" href="javascript:void(0);">AdminCC</a>
+                                    <a class="m-r-20" target="_blank" href="javascript:void(0);">Oakleaf Admin</a>
+                                    <a class="m-r-20" target="_blank" href="javascript:void(0);">sQuare</a>
+                                </div>
+                                <hr>
+                                <div class="body">
+                                    <h6 class="mb-0"><a target="_blank" href="javascript:void(0);">Alpino - Bootstrap 4
+                                            Admin Dashboard Template</a></h6>
+                                    <small>https://themeforest.net/user/wraptheme/portfolio</small>
+                                    <p class="m-t-10">15+ Dashboard, 100+ Integrated Plugins, 400+ Pages, Light and Dark
+                                        Menu, The Multistep Form, Timeline view, Summermnote Editor, Image Cropping
+                                        Tool, Easy to access Menu Styles</p>
+                                    <a class="m-r-20" target="_blank" href="javascript:void(0);">Oakleaf Admin</a>
+                                    <a class="m-r-20" target="_blank" href="javascript:void(0);">sQuare</a>
+                                    <a class="m-r-20" target="_blank" href="javascript:void(0);">AdminCC</a>
+                                </div>
+                                <hr>
+                                <ul class="body pagination pagination-primary">
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane card" id="Images">
+                                <div class="body text-center">
+                                    <div class="not_found">
+                                        <h4 class="mb-0">Sorry No result found.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane card" id="Videos">
+                                <div class="body text-center">
+                                    <div class="not_found">
+                                        <h4 class="mb-0">Sorry No result found.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Large Size -->
+    <div class="modal fade" id="largeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="title" id="largeModalLabel">Thêm mới</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="frmThemMoi" enctype="multipart/form-data">
+                        <input name="__RequestVerificationToken" type="hidden"
+                            value="AtiZ4hjgldqO7LbZ1VanObXrFCWhiazWb46zFs78xLio9HrWqPFyaTSTwE2LmGxZYrV7xo-T6iZwL5yoZv5gjr19J07yRoE4zFUNOuSNddk1">
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <label class="control-label">Tên công việc *</label>
+                                <div class="input-group">
+                                    <input class="form-control text-box single-line" id="TenCongViec" name="TenCongViec" type="text" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group d-flex gap8 pr-8">
+                                <div class="col-6 p-0">
+                                    <label class="control-label">Ngày bắt đầu</label>
+                                    <div class="input-group date">
+                                        <input class="form-control" type="text" name="NgayBatDau"
+                                            value="2025-05-27T07:00">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-default" type="text"><i class="fa fa-calendar"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-0">
+                                    <label class="control-label">Thời hạn</label>
+                                    <div class="input-group date" data-date-autoclose="true" data-provide="datepicker">
+                                        <input class="form-control" type="text" name="ThoiHan" value="2025-05-27T17:00">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label class="control-label">Giao cho</label>
+                                <div class="c_multiselect">
+                                    <select class="single-selection multiselect multiselect-custom" name="tenDangNhap"
+                                        onchange="$('#frm').submit()"tabindex="-1"
+                                        aria-hidden="true">
+                                        <option value="thoantt">Tôi thực hiện</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group mb-4">                             
+                                <label class="control-label">Người theo dõi</label>
+                                <div class="input-group c_multiselect">
+                                    <select class="single-selection multiselect-custom" name="NguoiTheoDoi"
+                                        onchange="$('#frm').submit()">
+                                        <option value="" disabled="disabled">Chọn người theo dõi</option>
+                                        <option value="anhpv">Phương Văn Anh - anhpv [Trưởng phòng]</option>
+                                        <option value="cuonghd">Hứa Đức Cường - cuonghd [Cán bộ CNTT]</option>
+                                        <option value="ducph">Phạm Huỳnh Đức - ducph [Cán bộ CNTT]</option>
+                                        <option value="ducthinh">Vũ Đức Thịnh - ducthinh [Cán bộ CNTT]</option>
+                                        <option value="duongtd">Trần Duy Dương - duongtd [Cán bộ CNTT]</option>
+                                        <option value="duynk">Nguyễn Khương Duy - duynk [Trưởng phòng]</option>
+                                        <option value="haipm">Phạm Minh Hải - haipm [GĐ Chi nhánh TRE]</option>
+                                        <option value="hattt">Trần Thái Hà - hattt [Cán bộ CNTT]</option>
+                                        <option value="hieupm">Phạm Minh Hiếu - hieupm [Cán bộ CNTT]</option>
+                                        <option value="hoailp">Lê Thị Phương Hoài - hoailp [NV Hành chính văn phòng]
+                                        </option>
+                                        <option value="hongst">Sầm Thúy Hồng - hongst [Cán bộ CNTT]</option>
+                                        <option value="huandv">Dương Văn Huân - huandv [Cán bộ CNTT]</option>
+                                        <option value="huuhai">Nguyễn Hữu Hải - huuhai [QT phần mềm QLĐH]</option>
+                                        <option value="huynq">Nguyễn Quang Huy - huynq [Cán bộ CNTT]</option>
+                                        <option value="huyvn">Nguyễn Văn Huy - huyvn [Cán bộ CNTT]</option>
+                                        <option value="khiemvd">Vũ Đình Khiêm - khiemvd [Cán bộ CNTT]</option>
+                                        <option value="levi">Lê Xuân Vĩ - levi [PTGĐ Công nghệ cao]</option>
+                                        <option value="loiduong">Dương Tiến Lợi - loiduong [Cán bộ CNTT]</option>
+                                        <option value="namtre">Dương Văn Nam - namtre [Cán bộ CNTT]</option>
+                                        <option value="namvh">Vũ Hoài Nam - namvh [Cán bộ CNTT]</option>
+                                        <option value="nccuong">Nguyễn Cao Cường - nccuong [Cán bộ CNTT]</option>
+                                        <option value="ngocanhnguyen">Nguyễn Ngọc Anh - ngocanhnguyen [Cán bộ CNTT]
+                                        </option>
+                                        <option value="nthai">Ngô Trọng Hải - nthai [Cán bộ CNTT]</option>
+                                        <option value="phuonglt">Dương Thị Lan Phương - phuonglt [Phó giám đốc phụ trợ]
+                                        </option>
+                                        <option value="quytung">Nguyễn Qúi Tùng - quytung [Cán bộ CNTT]</option>
+                                        <option value="thangtq">Tô Quyết Thắng - thangtq [Cán bộ CNTT]</option>
+                                        <option value="thanhtung">Đặng Thanh Tùng - thanhtung [Cán bộ CNTT]</option>
+                                        <option value="thehoan">Nguyễn Thế Hoàn - thehoan [Cán bộ CNTT]</option>
+                                        <option value="thoantt">Nguyễn Thị Kim Thoa - thoantt [Cán bộ CNTT]</option>
+                                        <option value="tienpm">Phùng Minh Tiến - tienpm [Cán bộ CNTT]</option>
+                                        <option value="tranxuanthang">Trần Xuân Thắng - tranxuanthang [Cán bộ CNTT]
+                                        </option>
+                                        <option value="truongan">Nguyễn Trường An - truongan [Cán bộ CNTT]</option>
+                                        <option value="tttphuong">Trịnh Thị Thu Phương - tttphuong [Cán bộ CNTT]
+                                        </option>
+                                        <option value="tuanvd">Vũ Duy Tuân - tuanvd [Cán bộ CNTT]</option>
+                                        <option value="tutd">Trương Đặng Tú - tutd [Cán bộ CNTT]</option>
+                                        <option value="vantre">Nguyễn Thanh Vân - vantre [Nhân viên đơn hàng]</option>
+                                        <option value="vietha">Bùi Việt Hà - vietha [Cán bộ CNTT]</option>
+                                        <option value="vuthidinh">Vũ Thị Dinh - vuthidinh [Cán bộ CNTT]</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex gap8 pr-8">
+                                <div class="col-6 p-0">
+                                    <label class="control-label">Bộ phận</label>
+                                    <div class="input-group">
+                                        <select name="idBoPhan" class="form-control select2 select2-hidden-accessible"
+                                            style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                            <option value="">Chọn bộ phận</option>
+                                            <option value="59">Chi nhánh Giải pháp công nghệ TRE</option>
+                                            <option value="60">Ban Giám Đốc</option>
+                                            <option value="61">Phòng Kinh doanh và Marketing</option>
+                                            <option value="62">Phòng Phát triển ứng dụng</option>
+                                            <option value="63">Phòng Công nghệ Phần mềm</option>
+                                            <option value="64">Phòng Quản trị mạng</option>
+                                            <option value="65">Phòng Triển khai ERP</option>
+                                            <option value="66">Phòng Kiểm thử phần mềm</option>
+                                            <option value="67">Phòng Tổng hợp</option>
+                                            <option value="68">Bộ tài chính</option>
+                                            <option value="69">Sở công thương</option>
+                                            <option value="70">TRE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-0">
+                                    <label class="control-label">Dự án</label>
+                                    <div class="input-group">
+                                        <select name="idDuAn" class="form-control select2 select2-hidden-accessible"
+                                            style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                            <option value="">Chọn dự án</option>
+                                            <option value="52">QLTS MINH ANH</option>
+                                            <option value="53">PLM_SiRi</option>
+                                            <option value="54">TNG LEAGUE</option>
+                                            <option value="56">QLTS HÀ PHONG</option>
+                                            <option value="57">KHĐT PMS</option>
+                                            <option value="58">QLTS SƠN HÀ</option>
+                                            <option value="59">VPS VITEXCO</option>
+                                            <option value="60">Dự án triển khai Vitexco</option>
+                                            <option value="61">Triển khai khách hàng X20</option>
+                                            <option value="62">Triển khai khách hàng 28.1</option>
+                                            <option value="63">Triển khai khách hàng Sơn Hà</option>
+                                            <option value="64">Triển khai khách hàng Itas</option>
+                                            <option value="65">Triển khai khách hàng Hồ Gươm</option>
+                                            <option value="66">Quản lý KPI đánh giá khách hàng</option>
+                                            <option value="67">Đăng kí nghỉ phép</option>
+                                            <option value="68">Họp đầu giờ tổ trưởng</option>
+                                            <option value="69">DỰ ÁN CRM</option>
+                                            <option value="70">Triển khai khách hàng Nhà Bè</option>
+                                            <option value="71">Hợp đồng khách hàng ngoài</option>
+                                            <option value="73">Bảo hành DCL control</option>
+                                            <option value="74">TNG - NHÂN SỰ - CÔNG - LƯƠNG</option>
+                                            <option value="75">Đánh giá nội bộ QLCL</option>
+                                            <option value="76">Quản lý chứng chỉ</option>
+                                            <option value="77">Nâng cấp báo cáo PM Đảng - đoàn</option>
+                                            <option value="78">Cân bằng chuyền công nhân</option>
+                                            <option value="79">DỰ ÁN OPEX</option>
+                                            <option value="80">Quản lý tài sản</option>
+                                            <option value="81">QLCL - Kiểm NPL đầu vào</option>
+                                            <option value="82">Triển khai khách hàng Hà Sơn</option>
+                                            <option value="83">VPS X20</option>
+                                            <option value="84">Dự án Theo dõi TC CBQL</option>
+                                            <option value="85">Quy hoạch cán bộ nâng cấp</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="TaiLieu" class="control-label">Tài liệu </label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="TaiLieu" name="files"
+                                        accept=".pdf, .doc, .docx, .ppt, .pptx, .xls, .xlsx, .mp3, .wav, .csv"
+                                        multiple="">
+                                    <label class="custom-file-label" for="TaiLieu">Chọn tệp</label>
+                                </div>
+                                <ul id="DanhSachTaiLieu" class="mt-2"></ul>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Mô tả</label>
+                                <div class="col-md-12">                                    
+                                    <textarea id="ckeditor">
+                                        <h2>WYSIWYG Editor</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper sapien non nisl facilisis bibendum in quis tellus. Duis in urna bibendum turpis pretium fringilla. Aenean neque velit, porta eget mattis ac, imperdiet quis nisi. Donec non dui et tortor vulputate luctus. Praesent consequat rhoncus velit, ut molestie arcu venenatis sodales.</p>
+                                        <h3>Lacinia</h3>
+                                        <ul>
+                                            <li>Suspendisse tincidunt urna ut velit ullamcorper fermentum.</li>
+                                            <li>Nullam mattis sodales lacus, in gravida sem auctor at.</li>
+                                            <li>Praesent non lacinia mi.</li>
+                                            <li>Mauris a ante neque.</li>
+                                            <li>Aenean ut magna lobortis nunc feugiat sagittis.</li>
+                                        </ul>
+                                        <h3>Pellentesque adipiscing</h3>
+                                        <p>Maecenas quis ante ante. Nunc adipiscing rhoncus rutrum. Pellentesque adipiscing urna mi, ut tempus lacus ultrices ac. Pellentesque sodales, libero et mollis interdum, dui odio vestibulum dolor, eu pellentesque nisl nibh quis nunc. Sed porttitor leo adipiscing venenatis vehicula. Aenean quis viverra enim. Praesent porttitor ut ipsum id ornare.</p>
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary">Tạo mới</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Javascript -->
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+    <script src="assets/bundles/vendorscripts.bundle.js"></script>
+
+
+    <!-- page js file -->
+    <script src="assets/vendor/multi-select/js/jquery.multi-select.js"></script> <!-- Multi Select Plugin Js -->
+    <script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+    <script src="assets/bundles/mainscripts.bundle.js"></script>
+    <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script><!-- bootstrap datepicker Plugin Js --> 
+    <script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+    <script src="assets/vendor/ckeditor/ckeditor.js"></script> <!-- Ckeditor --> 
+    <script src="../js/custom.js"></script>
+    <script>
+        $(function () {
+            //CKEditor
+            CKEDITOR.replace('ckeditor');
+            CKEDITOR.config.height = 300;
+        
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.user-account .user-photo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.user-account .dropdown .dropdown-menu a{
+    font-size: 12px;
+    color: var(--dark-color);
+}
+.user-account .dropdown .dropdown-menu{
+    padding: 5px;
+    background: var(--body-color);
+    min-width: 11em;
+}
+.card .header .header-dropdown li .dropdown-menu{    
+    color: var(--dark-color);
+    background: var(--body-color);
+}
+.sidebar-nav .metismenu{
+    gap:8px;
+}
+.card .header{
+    border-bottom: 1px solid var(--border-color);
+}
+.sidebar-nav .metismenu>li.divider {
+    border-bottom: 1px solid var(--border-color);
+    margin: 10px 0;
+}
+.sidebar-nav .metismenu>li>a svg{
+    height: 15px;
+}
+.sidebar-nav .metismenu>li>a svg path{
+    fill:var(--dark-color);
+}
+.sidebar-nav .metismenu>li.active>a svg path{
+    fill:var(--primary-color);
+}
+.card .header .header-dropdown li .dropdown-menu li a:hover {
+    color: var(--primary-color);
+}
+.card .header h2{
+    text-transform: uppercase;
+}
+.fc .fc-toolbar .fc-today-button, .fc .fc-toolbar .fc-state-default{
+    padding: 8px;
+}
+.fc .fc-view-container .fc-list-view .fc-list-item {
+    color: var(--body-color);
+}
+.fc .fc-toolbar .fc-today-button, .fc .fc-toolbar .fc-state-default{
+    background: var(--font-xlight);
+    
+    text-transform: capitalize;
+}
+.fc .fc-toolbar .fc-state-default.fc-state-active{
+    background: var(--primary-color);
+}
+.fc .fc-view-container .fc-list-view .fc-list-item:hover {
+    color: var(--dark-color);
+}
+.menu-addon i{
+    font-size: 30px;
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: 7px;
+}
+.navbar-nav .dropdown-menu.menu-addon.show{    
+    display: grid;
+}
+.navbar-nav .dropdown-menu.menu-addon{
+    padding: 30px;
+    min-width: 20rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 12px;
+    line-height: 1;
+}
+.toggle-switch{
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+.sidebar-scroll .nav-tabs{
+    justify-content: space-between;
+}
+.page_action +.page_action {
+    margin-top: 10px;
+}
+.gap8{
+    gap:8px;
+}
+.offcanvas-right .sidebar.right{
+    right: 0;
+}
+.sidebar.right{
+    left: auto;
+    right: -100%;
+    z-index: 100;
+    box-shadow: inset -1px -1px 10px 0px var(--box-shadow-light);
+}
+.input-group-text button{
+    background-color: var(--card-color);
+    border-color: var(--border-color);
+    color: var(--text-muted);
+    border: 0;
+    padding: 0;
+}
+.input-group-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    padding: 0;
+    margin-right: -1px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius:0 !important;
+}
+.datepicker table tr td, .datepicker table tr th{
+    font-size: 12px;
+}
+.form-filter label{
+    font-size: 12px;
+}
+.table-scroll th {
+    white-space: nowrap;
+}
+.table-scroll {
+    overflow: auto;
+}
+.navbar-center{
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+    vertical-align: middle;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+.setting_skin{
+    position: fixed;
+    right: 20px;
+    top:20px;
+}
+.page-item.active .page-link{
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+  /* Ô Select chính */
+  .tree-select-modal {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+  }
+.pr-8{
+    padding-right: 8px;
+}
+
+  /* Tree style */
+  .modal-content ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+
+  .modal-content li {
+    cursor: pointer;
+    padding: 4px 0;
+    position: relative;
+  }
+
+  /* Mũi tên nhánh */
+  .modal-content li.has-children > span:before {
+    content: "\f105";
+    display: inline-block;
+    margin-right: 6px;
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+    font: normal normal normal 14px / 1 FontAwesome;
+  }
+
+  .modal-content li.has-children.open > span:before {
+    transform: rotate(90deg);
+  }
+
+  /* Ẩn nhánh con */
+  .modal-content ul ul {
+    display: none;
+  }
+
+  .modal-content li.has-children.open > ul {
+    display: block;
+  }
+
+  /* Hover */
+  .modal-content li span:hover {
+    background: #eee;
+  }
+
+  /* Nút đóng modal */
+  /* .modal-close-btn {
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
