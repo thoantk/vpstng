@@ -151,6 +151,11 @@
     background: var(--primary-color);
     border-color: var(--primary-color);
 }
+.block-header .row > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
   /* Ô Select chính */
   .tree-select-modal {
     width: 250px;

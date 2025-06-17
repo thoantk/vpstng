@@ -2687,6 +2687,7 @@ html.fullscreen-bg,html.fullscreen-bg body,html.fullscreen-bg #wrapper {
     background: var(--card-color);
     border: solid;
     border-left-width: 1px;
+    border-right-width: 0;
     border-top: 0;
     border-bottom: 0;
     border-color: var(--primary-color)
@@ -4273,7 +4274,7 @@ select.form-control:not([size]):not([multiple]) {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 0.0625rem solid var(--border-color);
+    border: 0.0625rem solid var(--font-color);
     border-radius: .18rem;
     background-color: transparent
 }
@@ -4291,7 +4292,7 @@ select.form-control:not([size]):not([multiple]) {
     left: .0625rem;
     bottom: 2px;
     border-radius: .18rem;
-    background-color: var(--border-color)
+    background-color: var(--font-color)
 }
 
 .toggle-switch+span {

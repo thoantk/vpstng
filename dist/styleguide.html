@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <title>Style guide</title>
     <meta charset="utf-8">
@@ -10,12 +11,14 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css">
-<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
     <link rel="stylesheet" href="assets/vendor/parsleyjs/css/parsley.css">
+    <link rel="stylesheet" href="assets/vendor/toastr/toastr.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
+
 <body data-theme="light" class="font-nunito">
     <div id="wrapper" class="theme-cyan">
         <!-- Page Loader -->
@@ -25,149 +28,174 @@
                 <p>Please wait...</p>
             </div>
         </div>
-    <!-- Top navbar div start -->
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-brand">
-                <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-bars"></i></button>
-                <button type="button" class="btn-toggle-fullwidth"><i class="fa fa-bars"></i></button>
-                <a href=""><img src="assets/images/logo.png" width="48" height="48" alt="logo"></a>                
-            </div>
-            <ul class="navbar-center">
-                <li class="nav-item nhacnhoBtn numberShaking-basic" style="cursor:pointer" onclick="NhacNho.Show()">
-                    <a href="javascript:void(0)"><i class="fa fa-calendar-minus-o " aria-hidden="true"></i> Nhắc việc</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#/VanBanNoiBo"><i class="fa fa-retweet"></i>VB nội bộ</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#/VanBan/VanBanDen/TraCuu"><i class="fa fa-download"></i>VB đến</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#/VanBanDi"><i class="fa fa-upload"></i>VB đi</a>
-                </li>
-            </ul>            
-            <div class="navbar-right"> 
-                <div id="navbar-menu">
-                    <ul class="nav navbar-nav">
-                        <li class="changemode">
-                            <label class="toggle-switch theme-switch">
-                                <input type="checkbox">
-                                <span class="toggle-switch-slider"></span>
-                            </label>
-                        </li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle icon-menu" title="add on" data-toggle="dropdown">
-                                <i class="icon-grid"></i>
-                            </a>                            
-                            <ul class="dropdown-menu menu-addon">
-                                <li>
-                                    <a href="#Dashboard"><i class="fa fa-file"></i><span>Dashboard</span></a>                                
-                                </li>
-                                <li>
-                                    <a href="" class="has-arrow"><i class="fa fa-dashboard"></i><span>Tài liệu ngành</span></a>                                
-                                </li>                            
-                                <li>
-                                    <a href=""><i class="fa fa-database"></i><span>Kho lưu trữ</span></a>
-                                </li>                            
-                                <li>
-                                    <a href="" class="has-arrow"><i class="fa fa fa-tasks"></i><span>Giao việc</span></a>                                
-                                </li>
-                                <li>
-                                    <a href="" class="has-arrow"><i class="fa fa-recycle"></i><span>Quy trình</span></a>                                                                
-                                </li>                            
-                                <li>
-                                    <a href="" class="has-arrow"><i class="fa fa-paper-plane"></i><span>Đề xuất</span></a>                                                                
-                                </li>
-                                <li>
-                                    <a href="" class="has-arrow"><i class="fa fa-cubes"></i><span>Dự án</span></a>                                                                
-                                </li>
-                            </ul>    
-                        </li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
-                                <i class="fa fa-bell"></i>
-                                <span class="notification-dot"></span>
-                            </a>
-                            <ul class="dropdown-menu notifications">
-                                <li class="header"><strong>You have 4 new Notifications</strong></li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <i class="icon-info text-warning"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="text">Campaign <strong>Holiday Sale</strong> is nearly reach budget limit.</p>
-                                                <span class="timestamp">10:00 AM Today</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>                               
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <i class="icon-like text-success"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="text">Your New Campaign <strong>Holiday Sale</strong> is approved.</p>
-                                                <span class="timestamp">11:30 AM Today</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                 <li>
-                                    <a href="javascript:void(0);">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <i class="icon-pie-chart text-info"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="text">Website visits from Twitter is 27% higher than last week.</p>
-                                                <span class="timestamp">04:00 PM Today</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <i class="icon-info text-danger"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="text">Error on website analytics configurations</p>
-                                                <span class="timestamp">Yesterday</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="footer"><a href="javascript:void(0);" class="more">See all notifications</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle" title="add on" data-toggle="dropdown" aria-expanded="true">
-                                <i class="icon-magic-wand"></i>
-                            </a>
-                            <div class="dropdown-menu p-3" id="setting">
-                                <h6>Choose Skin</h6>
-                                <ul class="choose-skin list-unstyled">
-                                    <li data-theme="purple"><div class="purple"></div></li>
-                                    <li data-theme="blue"><div class="blue"></div></li>
-                                    <li data-theme="cyan" class="active"><div class="cyan"></div></li>
-                                    <li data-theme="green"><div class="green"></div></li>
-                                    <li data-theme="orange"><div class="orange"></div></li>
-                                    <li data-theme="blush"><div class="blush"></div></li>
-                                    <li data-theme="red"><div class="red"></div></li>
+        <!-- Top navbar div start -->
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-bars"></i></button>
+                    <button type="button" class="btn-toggle-fullwidth"><i class="fa fa-bars"></i></button>
+                    <a href=""><img src="assets/images/logo.png" width="48" height="48" alt="logo"></a>
+                </div>
+                <ul class="navbar-center">
+                    <li class="nav-item nhacnhoBtn numberShaking-basic" style="cursor:pointer" onclick="NhacNho.Show()">
+                        <a href="javascript:void(0)"><i class="fa fa-calendar-minus-o " aria-hidden="true"></i> Nhắc
+                            việc</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="vanban-noibo.html"><i class="fa fa-retweet"></i>VB nội bộ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#/VanBan/VanBanDen/TraCuu"><i class="fa fa-download"></i>VB đến</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#/VanBanDi"><i class="fa fa-upload"></i>VB đi</a>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <div id="navbar-menu">
+                        <ul class="nav navbar-nav">
+                            <li class="changemode">
+                                <label class="toggle-switch theme-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-switch-slider"></span>
+                                </label>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" title="add on"
+                                    data-toggle="dropdown">
+                                    <i class="icon-grid"></i>
+                                </a>
+                                <ul class="dropdown-menu menu-addon">
+                                    <li>
+                                        <a href="#Dashboard"><i class="fa fa-file"></i><span>Dashboard</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="has-arrow"><i class="fa fa-dashboard"></i><span>Tài liệu
+                                                ngành</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa fa-database"></i><span>Kho lưu trữ</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="has-arrow"><i class="fa fa fa-tasks"></i><span>Giao
+                                                việc</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="has-arrow"><i class="fa fa-recycle"></i><span>Quy
+                                                trình</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="has-arrow"><i class="fa fa-paper-plane"></i><span>Đề
+                                                xuất</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="has-arrow"><i class="fa fa-cubes"></i><span>Dự án</span></a>
+                                    </li>
                                 </ul>
-                            </div> 
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                    <i class="fa fa-bell"></i>
+                                    <span class="notification-dot"></span>
+                                </a>
+                                <ul class="dropdown-menu notifications">
+                                    <li class="header"><strong>You have 4 new Notifications</strong></li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-info text-warning"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">Campaign <strong>Holiday Sale</strong> is nearly
+                                                        reach budget limit.</p>
+                                                    <span class="timestamp">10:00 AM Today</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-like text-success"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">Your New Campaign <strong>Holiday Sale</strong> is
+                                                        approved.</p>
+                                                    <span class="timestamp">11:30 AM Today</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-pie-chart text-info"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">Website visits from Twitter is 27% higher than last
+                                                        week.</p>
+                                                    <span class="timestamp">04:00 PM Today</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-info text-danger"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">Error on website analytics configurations</p>
+                                                    <span class="timestamp">Yesterday</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="footer"><a href="javascript:void(0);" class="more">See all
+                                            notifications</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" title="add on"
+                                    data-toggle="dropdown" aria-expanded="true">
+                                    <i class="icon-magic-wand"></i>
+                                </a>
+                                <div class="dropdown-menu p-3" id="setting">
+                                    <h6>Choose Skin</h6>
+                                    <ul class="choose-skin list-unstyled">
+                                        <li data-theme="purple">
+                                            <div class="purple"></div>
+                                        </li>
+                                        <li data-theme="blue">
+                                            <div class="blue"></div>
+                                        </li>
+                                        <li data-theme="cyan" class="active">
+                                            <div class="cyan"></div>
+                                        </li>
+                                        <li data-theme="green">
+                                            <div class="green"></div>
+                                        </li>
+                                        <li data-theme="orange">
+                                            <div class="orange"></div>
+                                        </li>
+                                        <li data-theme="blush">
+                                            <div class="blush"></div>
+                                        </li>
+                                        <li data-theme="red">
+                                            <div class="red"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
         <!-- main left menu -->
         <div id="left-sidebar" class="sidebar">
             <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-arrow-left"></i></button>
@@ -197,197 +225,25 @@
                     </div>
                     <hr>
                 </div>
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs">
-                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#setting"><i
-                                class="icon-settings"></i></a></li>
-                </ul>
-                <!-- Tab panes -->
-                <div class="tab-content padding-0">
-                    <div class="tab-pane active" id="menu">
-                        <nav id="left-sidebar-nav" class="sidebar-nav">
-                            <ul id="main-menu" class="metismenu li_animation_delay">
-                                <li class="active">
-                                    <a href="styleguide.html" aria-expanded="false"><i class="fa fa-diamond"></i><span>Style guide</span></a>
-                                </li>
-                                <li>
-                                    <a href="listdanhsach.html" aria-expanded="false"><i class="fa fa-search"></i><span>Danh sách tìm kiếm</span></a>
-                                </li>
-                                <li>
-                                    <a href="mywork.html" aria-expanded="false"><i class="fa fa-diamond"></i><span>Công việc của tôi</span></a>
-                                </li>
-                                <li class="">
-                                    <a href="login.html" aria-expanded="false"><i class="fa fa-diamond"></i><span>Login</span></a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="tab-pane" id="Chat">
-                        <form>
-                            <div class="input-group m-b-20">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="icon-magnifier"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Search...">
-                            </div>
-                        </form>
-                        <ul class="right_chat list-unstyled li_animation_delay">
-                            <li>
-                                <a href="javascript:void(0);" class="media">
-                                    <img class="media-object" src="assets/images/xs/avatar1.jpg" alt="">
-                                    <div class="media-body">
-                                        <span class="name d-flex justify-content-between">Chris Fox <i
-                                                class="fa fa-heart-o font-12"></i></span>
-                                        <span class="message">chrisfox@gmail.com</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="media">
-                                    <img class="media-object" src="assets/images/xs/avatar2.jpg" alt="">
-                                    <div class="media-body">
-                                        <span class="name d-flex justify-content-between">Joge Lucky <i
-                                                class="fa fa-heart-o font-12"></i></span>
-                                        <span class="message">Jogelucky@gmail.com</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="media">
-                                    <img class="media-object" src="assets/images/xs/avatar3.jpg" alt="">
-                                    <div class="media-body">
-                                        <span class="name d-flex justify-content-between">Isabella <i
-                                                class="fa fa-heart-o font-12"></i></span>
-                                        <span class="message">Isabella@gmail.com</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="media">
-                                    <img class="media-object" src="assets/images/xs/avatar4.jpg" alt="">
-                                    <div class="media-body">
-                                        <span class="name d-flex justify-content-between">Folisise Chosielie <i
-                                                class="fa fa-heart font-12"></i></span>
-                                        <span class="message">FolisiseChosielie@gmail.com</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="media">
-                                    <img class="media-object" src="assets/images/xs/avatar5.jpg" alt="">
-                                    <div class="media-body">
-                                        <span class="name d-flex justify-content-between">Alexander <i
-                                                class="fa fa-heart-o font-12"></i></span>
-                                        <span class="message">Alexander@gmail.com</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane" id="setting">
-                        <h6>Choose Skin</h6>
-                        <ul class="choose-skin list-unstyled">
-                            <li data-theme="purple">
-                                <div class="purple"></div>
-                            </li>
-                            <li data-theme="blue">
-                                <div class="blue"></div>
-                            </li>
-                            <li data-theme="cyan" class="active">
-                                <div class="cyan"></div>
-                            </li>
-                            <li data-theme="green">
-                                <div class="green"></div>
-                            </li>
-                            <li data-theme="orange">
-                                <div class="orange"></div>
-                            </li>
-                            <li data-theme="blush">
-                                <div class="blush"></div>
-                            </li>
-                            <li data-theme="red">
-                                <div class="red"></div>
-                            </li>
-                        </ul>
-                        <ul class="list-unstyled font_setting mt-3">
-                            <li>
-                                <label class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" name="font" value="font-nunito"
-                                        checked="">
-                                    <span class="custom-control-label">Nunito Google Font</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" name="font" value="font-ubuntu">
-                                    <span class="custom-control-label">Ubuntu Font</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" name="font" value="font-raleway">
-                                    <span class="custom-control-label">Raleway Google Font</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" name="font" value="font-IBMplex">
-                                    <span class="custom-control-label">IBM Plex Google Font</span>
-                                </label>
-                            </li>
-                        </ul>
-                        <ul class="list-unstyled mt-3">
-                            <li class="d-flex align-items-center mb-2">
-                                <label class="toggle-switch theme-switch">
-                                    <input type="checkbox">
-                                    <span class="toggle-switch-slider"></span>
-                                </label>
-                                <span class="ml-3">Enable Dark Mode!</span>
-                            </li>
-                            <li class="d-flex align-items-center mb-2">
-                                <label class="toggle-switch theme-rtl">
-                                    <input type="checkbox">
-                                    <span class="toggle-switch-slider"></span>
-                                </label>
-                                <span class="ml-3">Enable RTL Mode!</span>
-                            </li>
-                            <li class="d-flex align-items-center mb-2">
-                                <label class="toggle-switch theme-high-contrast">
-                                    <input type="checkbox">
-                                    <span class="toggle-switch-slider"></span>
-                                </label>
-                                <span class="ml-3">Enable High Contrast Mode!</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane" id="question">
-                        <form>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="icon-magnifier"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Search...">
-                            </div>
-                        </form>
-                        <ul class="list-unstyled question">
-                            <li class="menu-heading">HOW-TO</li>
-                            <li><a href="javascript:void(0);">How to Create Campaign</a></li>
-                            <li><a href="javascript:void(0);">Boost Your Sales</a></li>
-                            <li><a href="javascript:void(0);">Website Analytics</a></li>
-                            <li class="menu-heading">ACCOUNT</li>
-                            <li><a href="javascript:void(0);">Cearet New Account</a></li>
-                            <li><a href="javascript:void(0);">Change Password?</a></li>
-                            <li><a href="javascript:void(0);">Privacy &amp; Policy</a></li>
-                            <li class="menu-heading">BILLING</li>
-                            <li><a href="javascript:void(0);">Payment info</a></li>
-                            <li><a href="javascript:void(0);">Auto-Renewal</a></li>
-                            <li class="menu-button mt-3">
-                                <a href="../docs/index.html" class="btn btn-primary btn-block">Documentation</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <nav id="left-sidebar-nav" class="sidebar-nav">
+                    <ul id="main-menu" class="metismenu li_animation_delay">
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                        </li>                                
+                        <li class="active">
+                            <a href="styleguide.html" aria-expanded="false"><i class="fa fa-paint-brush"></i><span>Style guide</span></a>
+                        </li>
+                        <li>
+                            <a href="listdanhsach.html" aria-expanded="false"><i class="fa fa-search"></i><span>Danh sách tìm kiếm</span></a>
+                        </li>
+                        <li>
+                            <a href="mywork.html" aria-expanded="false"><i class="fa fa-trello"></i><span>Công việc của tôi</span></a>
+                        </li>
+                        <li class="">
+                            <a href="login.html" aria-expanded="false"><i class="fa fa-user"></i><span>Login</span></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <!-- rightbar icon div -->
@@ -562,7 +418,7 @@
                             <div class="body">
                                 <a href="#defaultModal" data-toggle="modal" data-target="#defaultModal">
                                     <img class="img-thumbnail img-fluid" src="assets/images/model1.jpg" alt="User">
-                                </a>                        
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -574,7 +430,7 @@
                             <div class="body">
                                 <a href="#largeModal" data-toggle="modal" data-target="#largeModal">
                                     <img class="img-thumbnail img-fluid" src="assets/images/model2.jpg" alt="User">
-                                </a>                        
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -586,11 +442,11 @@
                             <div class="body">
                                 <a href="#smallModal" data-toggle="modal" data-target="#smallModal">
                                     <img class="img-thumbnail img-fluid" src="assets/images/model3.jpg" alt="User">
-                                </a>                        
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="row clearfix">
                     <div class="col-md-12">
                         <div class="card">
@@ -613,9 +469,10 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Checkbox</label>
-                                        <br/>
+                                        <br />
                                         <label class="fancy-checkbox">
-                                            <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
+                                            <input type="checkbox" name="checkbox" required
+                                                data-parsley-errors-container="#error-checkbox">
                                             <span>Option 1</span>
                                         </label>
                                         <label class="fancy-checkbox">
@@ -632,7 +489,8 @@
                                         <label>Radio Button</label>
                                         <br />
                                         <label class="fancy-radio">
-                                            <input type="radio" name="gender" value="male" required data-parsley-errors-container="#error-radio">
+                                            <input type="radio" name="gender" value="male" required
+                                                data-parsley-errors-container="#error-radio">
                                             <span><i></i>Male</span>
                                         </label>
                                         <label class="fancy-radio">
@@ -645,7 +503,8 @@
                                         <div class="col-lg-4 col-md-12">
                                             <label>Select chọn 1</label>
                                             <div class="c_multiselect">
-                                                <select id="single-selection" name="single_selection" class="single-selection multiselect multiselect-custom">
+                                                <select id="single-selection" name="single_selection"
+                                                    class="single-selection multiselect multiselect-custom">
                                                     <option value="cheese">Cheese</option>
                                                     <option value="tomatoes">Tomatoes</option>
                                                     <option value="mozarella">Mozzarella</option>
@@ -658,7 +517,10 @@
                                         <div class="col-lg-4 col-md-12">
                                             <label>Select có nhiều lựa chọn</label>
                                             <div class="c_multiselect">
-                                                <select id="multiselect4-filter" name="food[]" class="multiselect multiselect-custom" multiple="multiple" data-parsley-required data-parsley-trigger-after-failure="change" data-parsley-errors-container="#error-multiselect">
+                                                <select id="multiselect4-filter" name="food[]"
+                                                    class="multiselect multiselect-custom" multiple="multiple"
+                                                    data-parsley-required data-parsley-trigger-after-failure="change"
+                                                    data-parsley-errors-container="#error-multiselect">
                                                     <option value="cheese">Cheese</option>
                                                     <option value="tomatoes">Tomatoes</option>
                                                     <option value="mozarella">Mozzarella</option>
@@ -669,11 +531,12 @@
                                                 <p id="error-multiselect"></p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-12">                                          
+                                        <div class="col-lg-4 col-md-12">
                                             <label>Select mở modal</label>
                                             <div class="c_multiselect">
                                                 <div class="btn-group">
-                                                    <button id="selectBox" class="btn dropdown-toggle btn-default" data-toggle="modal" data-target="#modal">Chọn mục</button>
+                                                    <button id="selectBox" class="btn dropdown-toggle btn-default"
+                                                        data-toggle="modal" data-target="#modal">Chọn mục</button>
                                                 </div>
                                             </div>
                                             <!-- Modal -->
@@ -688,30 +551,35 @@
                                                                 <li class="has-children">
                                                                     <span>Trái cây</span>
                                                                     <ul>
-                                                                    <li><span data-value="apple">Táo</span></li>
-                                                                    <li><span data-value="orange">Cam</span></li>
-                                                                    <li class="has-children">
-                                                                        <span>Quả mọng</span>
-                                                                        <ul>
-                                                                        <li><span data-value="strawberry">Dâu tây</span></li>
-                                                                        <li><span data-value="blueberry">Việt quất</span></li>
-                                                                        </ul>
-                                                                    </li>
+                                                                        <li><span data-value="apple">Táo</span></li>
+                                                                        <li><span data-value="orange">Cam</span></li>
+                                                                        <li class="has-children">
+                                                                            <span>Quả mọng</span>
+                                                                            <ul>
+                                                                                <li><span data-value="strawberry">Dâu
+                                                                                        tây</span></li>
+                                                                                <li><span data-value="blueberry">Việt
+                                                                                        quất</span></li>
+                                                                            </ul>
+                                                                        </li>
                                                                     </ul>
                                                                 </li>
                                                                 <li class="has-children">
                                                                     <span>Rau củ</span>
                                                                     <ul>
-                                                                    <li><span data-value="carrot">Cà rốt</span></li>
-                                                                    <li><span data-value="broccoli">Bông cải xanh</span></li>
+                                                                        <li><span data-value="carrot">Cà rốt</span></li>
+                                                                        <li><span data-value="broccoli">Bông cải
+                                                                                xanh</span></li>
                                                                     </ul>
                                                                 </li>
                                                                 <li><span data-value="meat">Thịt</span></li>
-                                                            </ul>                
+                                                            </ul>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button type="button" class="btn btn-primary">SAVE CHANGES</button>
-                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+                                                            <button type="button" class="btn btn-primary">SAVE
+                                                                CHANGES</button>
+                                                            <button type="button" class="btn btn-danger"
+                                                                data-dismiss="modal">CLOSE</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -724,18 +592,22 @@
                                                 <label>Mobile Phone Number</label>
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa fa-mobile-phone"></i></span>
+                                                        <span class="input-group-text"><i
+                                                                class="fa fa-mobile-phone"></i></span>
                                                     </div>
-                                                    <input type="text" class="form-control mobile-phone-number" placeholder="Ex: 0000-000-000">
+                                                    <input type="text" class="form-control mobile-phone-number"
+                                                        placeholder="Ex: 0000-000-000">
                                                 </div>
                                             </div>
                                             <div class="col-lg-4 col-md-6">
                                                 <label>Email Address</label>
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
+                                                        <span class="input-group-text"><i
+                                                                class="fa fa-envelope-o"></i></span>
                                                     </div>
-                                                    <input type="text" class="form-control email" placeholder="Ex: example@example.com">
+                                                    <input type="text" class="form-control email"
+                                                        placeholder="Ex: example@example.com">
                                                 </div>
                                             </div>
                                             <div class="col-lg-4 col-md-6">
@@ -745,17 +617,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12">
                                             <label>Date</label>
-                                            <div class="input-group date" data-date-autoclose="true" data-provide="datepicker" data-date-format="dd/mm/yyyy">
+                                            <div class="input-group date" data-date-autoclose="true"
+                                                data-provide="datepicker" data-date-format="dd/mm/yyyy">
                                                 <div class="input-group-text">
-                                                    <button class="btn btn-outline" type="button"><i class="fa fa-calendar"></i></button>
+                                                    <button class="btn btn-outline" type="button"><i
+                                                            class="fa fa-calendar"></i></button>
                                                 </div>
                                                 <input type="text" class="form-control">
                                             </div>
-                                        </div> 
+                                        </div>
                                         <div class="col-lg-4 col-md-6">
                                             <label>Tên đăng nhập</label>
                                             <div class="input-group mb-3">
@@ -764,7 +638,7 @@
                                                 </div>
                                                 <input type="text" class="form-control" placeholder="Ex: username">
                                             </div>
-                                        </div>                                                                              
+                                        </div>
                                     </div>
                                     <br>
                                     <button type="submit" class="btn btn-primary">Validate</button>
@@ -772,7 +646,7 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="row clearfix">
                     <div class="col-md-12">
                         <div class="card">
@@ -780,327 +654,497 @@
                                 <h2>Date Picker</h2>
                             </div>
                             <div class="body">
-                                <div class="row">                                
+                                <div class="row">
                                     <div class="col-lg-4 col-md-12">
                                         <label>Date</label>
-                                        <div class="input-group date" data-date-autoclose="true" data-provide="datepicker" data-date-format="dd/mm/yyyy">
-                                            <div class="input-group-append">                                            
-                                                <button class="btn btn-outline" type="button"><i class="fa fa-calendar"></i></button>
+                                        <div class="input-group date" data-date-autoclose="true"
+                                            data-provide="datepicker" data-date-format="dd/mm/yyyy">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline" type="button"><i
+                                                        class="fa fa-calendar"></i></button>
                                             </div>
                                             <input type="text" class="form-control">
                                         </div>
-                                    </div>                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h2>Masked Input with icons </h2>
+                        <ul class="header-dropdown">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                                    role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="javascript:void(0);">Action</a></li>
+                                    <li><a href="javascript:void(0);">Another Action</a></li>
+                                    <li><a href="javascript:void(0);">Something else</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="demo-masked-input">
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-md-6">
+                                    <label>Mobile Phone Number</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-mobile-phone"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control mobile-phone-number"
+                                            placeholder="Ex: 0000-000-000">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <label>Email Address</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control email"
+                                            placeholder="Ex: example@example.com">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <label>Number có dấu phân cách</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control number" placeholder="0">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                    <div class="card">
-                        <div class="header">
-                            <h2>Masked Input with icons </h2>
-                            <ul class="header-dropdown">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                                    <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another Action</a></li>
-                                        <li><a href="javascript:void(0);">Something else</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div class="demo-masked-input">
-                                <div class="row clearfix">
-                                    <div class="col-lg-4 col-md-6">
-                                        <label>Mobile Phone Number</label>
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fa fa-mobile-phone"></i></span>
-                                            </div>
-                                            <input type="text" class="form-control mobile-phone-number" placeholder="Ex: 0000-000-000">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <label>Email Address</label>
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
-                                            </div>
-                                            <input type="text" class="form-control email" placeholder="Ex: example@example.com">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <label>Number có dấu phân cách</label>
-                                        <div class="input-group mb-3">
-                                            <input type="text" class="form-control number" placeholder="0">
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="row clealfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Message Context</h2>
                             </div>
-                        </div>
-                    </div>  
-                    <div class="card">
-                        <div class="header">
-                            <h2>Basic Example 1</h2>
-                        </div>
-                        <div class="body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-hover js-basic-example dataTable table-scroll">
-                                <thead>
-                                    <tr>
-                                    <!-- Tiêu đề cột -->
-                                    <!-- Tạo 15 cột -->
-                                    <th>Col 1</th>
-                                    <th>Col 2</th>
-                                    <th>Col 3</th>
-                                    <th>Col 4</th>
-                                    <th>Col 5</th>
-                                    <th>Col 6</th>
-                                    <th>Col 7</th>
-                                    <th>Col 8</th>
-                                    <th>Col 9</th>
-                                    <th>Col 10</th>
-                                    <th>Col 11</th>
-                                    <th>Col 12</th>
-                                    <th>Col 13</th>
-                                    <th>Col 14</th>
-                                    <th>Col 15</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- Tạo 20 hàng -->
-                                    <!-- Dữ liệu mẫu: "Row X - Col Y" -->
-                                    <!-- Sử dụng vòng lặp trong code ví dụ này để dễ hiểu -->
-                                    <!-- Dưới đây là code tĩnh -->
-                                    <tr>
-                                    <td>Row 1 - Col 1</td><td>Row 1 - Col 2</td><td>Row 1 - Col 3</td><td>Row 1 - Col 4</td><td>Row 1 - Col 5</td>
-                                    <td>Row 1 - Col 6</td><td>Row 1 - Col 7</td><td>Row 1 - Col 8</td><td>Row 1 - Col 9</td><td>Row 1 - Col 10</td>
-                                    <td>Row 1 - Col 11</td><td>Row 1 - Col 12</td><td>Row 1 - Col 13</td><td>Row 1 - Col 14</td><td>Row 1 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 2 - Col 1</td><td>Row 2 - Col 2</td><td>Row 2 - Col 3</td><td>Row 2 - Col 4</td><td>Row 2 - Col 5</td>
-                                    <td>Row 2 - Col 6</td><td>Row 2 - Col 7</td><td>Row 2 - Col 8</td><td>Row 2 - Col 9</td><td>Row 2 - Col 10</td>
-                                    <td>Row 2 - Col 11</td><td>Row 2 - Col 12</td><td>Row 2 - Col 13</td><td>Row 2 - Col 14</td><td>Row 2 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 3 - Col 1</td><td>Row 3 - Col 2</td><td>Row 3 - Col 3</td><td>Row 3 - Col 4</td><td>Row 3 - Col 5</td>
-                                    <td>Row 3 - Col 6</td><td>Row 3 - Col 7</td><td>Row 3 - Col 8</td><td>Row 3 - Col 9</td><td>Row 3 - Col 10</td>
-                                    <td>Row 3 - Col 11</td><td>Row 3 - Col 12</td><td>Row 3 - Col 13</td><td>Row 3 - Col 14</td><td>Row 3 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 4 - Col 1</td><td>Row 4 - Col 2</td><td>Row 4 - Col 3</td><td>Row 4 - Col 4</td><td>Row 4 - Col 5</td>
-                                    <td>Row 4 - Col 6</td><td>Row 4 - Col 7</td><td>Row 4 - Col 8</td><td>Row 4 - Col 9</td><td>Row 4 - Col 10</td>
-                                    <td>Row 4 - Col 11</td><td>Row 4 - Col 12</td><td>Row 4 - Col 13</td><td>Row 4 - Col 14</td><td>Row 4 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 5 - Col 1</td><td>Row 5 - Col 2</td><td>Row 5 - Col 3</td><td>Row 5 - Col 4</td><td>Row 5 - Col 5</td>
-                                    <td>Row 5 - Col 6</td><td>Row 5 - Col 7</td><td>Row 5 - Col 8</td><td>Row 5 - Col 9</td><td>Row 5 - Col 10</td>
-                                    <td>Row 5 - Col 11</td><td>Row 5 - Col 12</td><td>Row 5 - Col 13</td><td>Row 5 - Col 14</td><td>Row 5 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 6 - Col 1</td><td>Row 6 - Col 2</td><td>Row 6 - Col 3</td><td>Row 6 - Col 4</td><td>Row 6 - Col 5</td>
-                                    <td>Row 6 - Col 6</td><td>Row 6 - Col 7</td><td>Row 6 - Col 8</td><td>Row 6 - Col 9</td><td>Row 6 - Col 10</td>
-                                    <td>Row 6 - Col 11</td><td>Row 6 - Col 12</td><td>Row 6 - Col 13</td><td>Row 6 - Col 14</td><td>Row 6 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 7 - Col 1</td><td>Row 7 - Col 2</td><td>Row 7 - Col 3</td><td>Row 7 - Col 4</td><td>Row 7 - Col 5</td>
-                                    <td>Row 7 - Col 6</td><td>Row 7 - Col 7</td><td>Row 7 - Col 8</td><td>Row 7 - Col 9</td><td>Row 7 - Col 10</td>
-                                    <td>Row 7 - Col 11</td><td>Row 7 - Col 12</td><td>Row 7 - Col 13</td><td>Row 7 - Col 14</td><td>Row 7 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 8 - Col 1</td><td>Row 8 - Col 2</td><td>Row 8 - Col 3</td><td>Row 8 - Col 4</td><td>Row 8 - Col 5</td>
-                                    <td>Row 8 - Col 6</td><td>Row 8 - Col 7</td><td>Row 8 - Col 8</td><td>Row 8 - Col 9</td><td>Row 8 - Col 10</td>
-                                    <td>Row 8 - Col 11</td><td>Row 8 - Col 12</td><td>Row 8 - Col 13</td><td>Row 8 - Col 14</td><td>Row 8 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 9 - Col 1</td><td>Row 9 - Col 2</td><td>Row 9 - Col 3</td><td>Row 9 - Col 4</td><td>Row 9 - Col 5</td>
-                                    <td>Row 9 - Col 6</td><td>Row 9 - Col 7</td><td>Row 9 - Col 8</td><td>Row 9 - Col 9</td><td>Row 9 - Col 10</td>
-                                    <td>Row 9 - Col 11</td><td>Row 9 - Col 12</td><td>Row 9 - Col 13</td><td>Row 9 - Col 14</td><td>Row 9 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 10 - Col 1</td><td>Row 10 - Col 2</td><td>Row 10 - Col 3</td><td>Row 10 - Col 4</td><td>Row 10 - Col 5</td>
-                                    <td>Row 10 - Col 6</td><td>Row 10 - Col 7</td><td>Row 10 - Col 8</td><td>Row 10 - Col 9</td><td>Row 10 - Col 10</td>
-                                    <td>Row 10 - Col 11</td><td>Row 10 - Col 12</td><td>Row 10 - Col 13</td><td>Row 10 - Col 14</td><td>Row 10 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 11 - Col 1</td><td>Row 11 - Col 2</td><td>Row 11 - Col 3</td><td>Row 11 - Col 4</td><td>Row 11 - Col 5</td>
-                                    <td>Row 11 - Col 6</td><td>Row 11 - Col 7</td><td>Row 11 - Col 8</td><td>Row 11 - Col 9</td><td>Row 11 - Col 10</td>
-                                    <td>Row 11 - Col 11</td><td>Row 11 - Col 12</td><td>Row 11 - Col 13</td><td>Row 11 - Col 14</td><td>Row 11 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 12 - Col 1</td><td>Row 12 - Col 2</td><td>Row 12 - Col 3</td><td>Row 12 - Col 4</td><td>Row 12 - Col 5</td>
-                                    <td>Row 12 - Col 6</td><td>Row 12 - Col 7</td><td>Row 12 - Col 8</td><td>Row 12 - Col 9</td><td>Row 12 - Col 10</td>
-                                    <td>Row 12 - Col 11</td><td>Row 12 - Col 12</td><td>Row 12 - Col 13</td><td>Row 12 - Col 14</td><td>Row 12 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 13 - Col 1</td><td>Row 13 - Col 2</td><td>Row 13 - Col 3</td><td>Row 13 - Col 4</td><td>Row 13 - Col 5</td>
-                                    <td>Row 13 - Col 6</td><td>Row 13 - Col 7</td><td>Row 13 - Col 8</td><td>Row 13 - Col 9</td><td>Row 13 - Col 10</td>
-                                    <td>Row 13 - Col 11</td><td>Row 13 - Col 12</td><td>Row 13 - Col 13</td><td>Row 13 - Col 14</td><td>Row 13 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 14 - Col 1</td><td>Row 14 - Col 2</td><td>Row 14 - Col 3</td><td>Row 14 - Col 4</td><td>Row 14 - Col 5</td>
-                                    <td>Row 14 - Col 6</td><td>Row 14 - Col 7</td><td>Row 14 - Col 8</td><td>Row 14 - Col 9</td><td>Row 14 - Col 10</td>
-                                    <td>Row 14 - Col 11</td><td>Row 14 - Col 12</td><td>Row 14 - Col 13</td><td>Row 14 - Col 14</td><td>Row 14 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 15 - Col 1</td><td>Row 15 - Col 2</td><td>Row 15 - Col 3</td><td>Row 15 - Col 4</td><td>Row 15 - Col 5</td>
-                                    <td>Row 15 - Col 6</td><td>Row 15 - Col 7</td><td>Row 15 - Col 8</td><td>Row 15 - Col 9</td><td>Row 15 - Col 10</td>
-                                    <td>Row 15 - Col 11</td><td>Row 15 - Col 12</td><td>Row 15 - Col 13</td><td>Row 15 - Col 14</td><td>Row 15 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 16 - Col 1</td><td>Row 16 - Col 2</td><td>Row 16 - Col 3</td><td>Row 16 - Col 4</td><td>Row 16 - Col 5</td>
-                                    <td>Row 16 - Col 6</td><td>Row 16 - Col 7</td><td>Row 16 - Col 8</td><td>Row 16 - Col 9</td><td>Row 16 - Col 10</td>
-                                    <td>Row 16 - Col 11</td><td>Row 16 - Col 12</td><td>Row 16 - Col 13</td><td>Row 16 - Col 14</td><td>Row 16 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 17 - Col 1</td><td>Row 17 - Col 2</td><td>Row 17 - Col 3</td><td>Row 17 - Col 4</td><td>Row 17 - Col 5</td>
-                                    <td>Row 17 - Col 6</td><td>Row 17 - Col 7</td><td>Row 17 - Col 8</td><td>Row 17 - Col 9</td><td>Row 17 - Col 10</td>
-                                    <td>Row 17 - Col 11</td><td>Row 17 - Col 12</td><td>Row 17 - Col 13</td><td>Row 17 - Col 14</td><td>Row 17 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 18 - Col 1</td><td>Row 18 - Col 2</td><td>Row 18 - Col 3</td><td>Row 18 - Col 4</td><td>Row 18 - Col 5</td>
-                                    <td>Row 18 - Col 6</td><td>Row 18 - Col 7</td><td>Row 18 - Col 8</td><td>Row 18 - Col 9</td><td>Row 18 - Col 10</td>
-                                    <td>Row 18 - Col 11</td><td>Row 18 - Col 12</td><td>Row 18 - Col 13</td><td>Row 18 - Col 14</td><td>Row 18 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 19 - Col 1</td><td>Row 19 - Col 2</td><td>Row 19 - Col 3</td><td>Row 19 - Col 4</td><td>Row 19 - Col 5</td>
-                                    <td>Row 19 - Col 6</td><td>Row 19 - Col 7</td><td>Row 19 - Col 8</td><td>Row 19 - Col 9</td><td>Row 19 - Col 10</td>
-                                    <td>Row 19 - Col 11</td><td>Row 19 - Col 12</td><td>Row 19 - Col 13</td><td>Row 19 - Col 14</td><td>Row 19 - Col 15</td>
-                                    </tr>
-                                    <tr>
-                                    <td>Row 20 - Col 1</td><td>Row 20 - Col 2</td><td>Row 20 - Col 3</td><td>Row 20 - Col 4</td><td>Row 20 - Col 5</td>
-                                    <td>Row 20 - Col 6</td><td>Row 20 - Col 7</td><td>Row 20 - Col 8</td><td>Row 20 - Col 9</td><td>Row 20 - Col 10</td>
-                                    <td>Row 20 - Col</td>
-                                </tr> </tbody>
-                                </table>
+                            <div class="body">
+                                <button type="button" class="btn btn-primary btn-toastr" data-context="info"
+                                    data-message="This is general theme info" data-position="bottom-right">General
+                                    Info</button>
+                                <button type="button" class="btn btn-success btn-toastr" data-context="success"
+                                    data-message="This is success info" data-position="bottom-right">Success
+                                    Info</button>
+                                <button type="button" class="btn btn-warning btn-toastr" data-context="warning"
+                                    data-message="This is warning info" data-position="bottom-right">Warning
+                                    Info</button>
+                                <button type="button" class="btn btn-danger btn-toastr" data-context="error"
+                                    data-message="This is error info" data-position="bottom-right">Error Info</button>
                             </div>
                         </div>
                     </div>
-             
-        </div>
-    </div>
-<!-- Modal Dialogs ========= --> 
-<!-- Default Size -->
-<div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="title" id="defaultModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan
-                vitae eros sit amet  Integer dapibus, mi ac tempor varius, purus
-                nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla.
-                Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc. </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary">SAVE CHANGES</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
-            </div>
-        </div>
-    </div>
-</div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Basic Example 1</h2>
+                            </div>
+                            <div class="body">
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Patients</th>
+                                                <th>Adress</th>
+                                                <th>START Date</th>
+                                                <th>END Date</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><span>John</span></td>
+                                                <td><span class="text-info">70 Bowman St. South Windsor, CT 06074</span>
+                                                </td>
+                                                <td>Sept 13, 2017</td>
+                                                <td>Sept 16, 2017</td>
+                                                <td><span class="badge badge-success">Admit</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><span>Jack Bird</span></td>
+                                                <td><span class="text-info">123 6th St. Melbourne, FL 32904</span></td>
+                                                <td>Sept 13, 2017</td>
+                                                <td>Sept 22, 2017</td>
+                                                <td><span class="badge badge-default">Discharge</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><span>Dean Otto</span></td>
+                                                <td><span class="text-info">123 6th St. Melbourne, FL 32904</span></td>
+                                                <td>Sept 13, 2017</td>
+                                                <td>Sept 23, 2017</td>
+                                                <td><span class="badge badge-success">Admit</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><span>Jack Bird</span></td>
+                                                <td><span class="text-info">4 Shirley Ave. West Chicago, IL 60185</span>
+                                                </td>
+                                                <td>Sept 17, 2017</td>
+                                                <td>Sept 16, 2017</td>
+                                                <td><span class="badge badge-default">Discharge</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><span>Hughe L.</span></td>
+                                                <td><span class="text-info">4 Shirley Ave. West Chicago, IL 60185</span>
+                                                </td>
+                                                <td>Sept 18, 2017</td>
+                                                <td>Sept 18, 2017</td>
+                                                <td><span class="badge badge-success">Admit</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <h2>Basic Example 2</h2>
+                            </div>
+                            <div class="body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0 c_list">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <label class="fancy-checkbox">
+                                                        <input class="select-all" type="checkbox" name="checkbox">
+                                                        <span></span>
+                                                    </label>
+                                                </th>
+                                                <th>Name</th>
+                                                <th>Phone</th>
+                                                <th>Address</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 50px;">
+                                                    <label class="fancy-checkbox">
+                                                        <input class="checkbox-tick" type="checkbox" name="checkbox">
+                                                        <span></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/xs/avatar1.jpg"
+                                                        class="rounded-circle avatar" alt="">
+                                                    <p class="c_name">Robert Hammer <span
+                                                            class="badge badge-default m-l-10 hidden-sm-down">Family</span>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="phone"><i
+                                                            class="zmdi zmdi-phone m-r-10"></i>264-625-2583</span>
+                                                </td>
+                                                <td>
+                                                    <address><i class="zmdi zmdi-pin"></i>123 6th St. Melbourne, FL
+                                                        32904</address>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-info" title="Edit"><i
+                                                            class="fa fa-edit"></i></button>
+                                                    <button type="button" data-type="confirm"
+                                                        class="btn btn-danger js-sweetalert" title="Delete"><i
+                                                            class="fa fa-trash-o"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="fancy-checkbox">
+                                                        <input class="checkbox-tick" type="checkbox" name="checkbox">
+                                                        <span></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/xs/avatar3.jpg"
+                                                        class="rounded-circle avatar" alt="">
+                                                    <p class="c_name">Orlando Lentz <span
+                                                            class="badge badge-info m-l-10 hidden-sm-down">Google</span>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="phone"><i
+                                                            class="zmdi zmdi-phone m-r-10"></i>264-625-5689</span>
+                                                </td>
+                                                <td>
+                                                    <address><i class="zmdi zmdi-pin"></i>44 Shirley Ave. West Chicago,
+                                                        IL 60185</address>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-info" title="Edit"><i
+                                                            class="fa fa-edit"></i></button>
+                                                    <button type="button" data-type="confirm"
+                                                        class="btn btn-danger js-sweetalert" title="Delete"><i
+                                                            class="fa fa-trash-o"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="fancy-checkbox">
+                                                        <input class="checkbox-tick" type="checkbox" name="checkbox">
+                                                        <span></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/xs/avatar9.jpg"
+                                                        class="rounded-circle avatar" alt="">
+                                                    <p class="c_name">Frank Camly</p>
+                                                </td>
+                                                <td>
+                                                    <span class="phone"><i
+                                                            class="zmdi zmdi-phone m-r-10"></i>264-625-9999</span>
+                                                </td>
+                                                <td>
+                                                    <address><i class="zmdi zmdi-pin"></i>123 6th St. Melbourne, FL
+                                                        32904</address>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-info" title="Edit"><i
+                                                            class="fa fa-edit"></i></button>
+                                                    <button type="button" data-type="confirm"
+                                                        class="btn btn-danger js-sweetalert" title="Delete"><i
+                                                            class="fa fa-trash-o"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="fancy-checkbox">
+                                                        <input class="checkbox-tick" type="checkbox" name="checkbox">
+                                                        <span></span>
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <img src="assets/images/xs/avatar10.jpg"
+                                                        class="rounded-circle avatar" alt="">
+                                                    <p class="c_name">Brian Swader<span
+                                                            class="badge badge-default m-l-10 hidden-sm-down">Family</span>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="phone"><i
+                                                            class="zmdi zmdi-phone m-r-10"></i>264-625-1212</span>
+                                                </td>
+                                                <td>
+                                                    <address><i class="zmdi zmdi-pin"></i>70 Bowman St. South Windsor,
+                                                        CT 06074</address>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-info" title="Edit"><i
+                                                            class="fa fa-edit"></i></button>
+                                                    <button type="button" data-type="confirm"
+                                                        class="btn btn-danger js-sweetalert" title="Delete"><i
+                                                            class="fa fa-trash-o"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<!-- Large Size -->
-<div class="modal fade" id="largeModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="title" id="largeModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body"> dignissim nibh faucibus ullamcorper.
-                Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus
-                nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla.
-                Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc. </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary">SAVE CHANGES</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+
             </div>
         </div>
-    </div>
-</div>
-
-<!-- Small Size -->
-<div class="modal fade" id="smallModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="title" id="smallModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan
-                vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper.
-                Fusce pulvinar libero vel ligula iaculis ullamcorper. </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary">SAVE CHANGES</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+        <!-- Modal Dialogs ========= -->
+        <!-- Default Size -->
+        <div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="title" id="defaultModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci
+                        ante, sed ornare eros vestibulum ut. Ut accumsan
+                        vitae eros sit amet Integer dapibus, mi ac tempor varius, purus
+                        nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas
+                        fringilla.
+                        Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc. </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">SAVE CHANGES</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Javascript -->
-    <script src="assets/bundles/libscripts.bundle.js"></script>    
-    <script src="assets/bundles/vendorscripts.bundle.js"></script>
 
-<script src="assets/vendor/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script> <!-- Bootstrap Colorpicker Js --> 
-<script src="assets/vendor/jquery-inputmask/jquery.inputmask.bundle.js"></script> <!-- Input Mask Plugin Js --> 
-<script src="assets/vendor/jquery.maskedinput/jquery.maskedinput.min.js"></script>
-    <script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
-<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script src="assets/vendor/parsleyjs/js/parsley.min.js"></script>
+        <!-- Large Size -->
+        <div class="modal fade" id="largeModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="title" id="largeModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body"> dignissim nibh faucibus ullamcorper.
+                        Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius,
+                        purus
+                        nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas
+                        fringilla.
+                        Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc. </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">SAVE CHANGES</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Small Size -->
+        <div class="modal fade" id="smallModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="title" id="smallModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci
+                        ante, sed ornare eros vestibulum ut. Ut accumsan
+                        vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus
+                        ullamcorper.
+                        Fusce pulvinar libero vel ligula iaculis ullamcorper. </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">SAVE CHANGES</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Javascript -->
-    <!-- page js file -->
-<script src="assets/bundles/mainscripts.bundle.js"></script>
-<script src="../js/pages/forms/advanced-form-elements.js"></script>
-<script>
-    $(function() {
-        // validation needs name of the element
-        $('#food').multiselect();
-        // initialize after multiselect
-        $('#basic-form').parsley();
-    });
-    //select open modal
-  const selectBox = document.getElementById("selectBox");
-  //const modal = document.getElementById("modal");
-  const treeRoot = document.getElementById("treeRoot");
+        <script src="assets/bundles/libscripts.bundle.js"></script>
+        <script src="assets/bundles/vendorscripts.bundle.js"></script>
 
-//   // Mở modal khi click ô select
-//   selectBox.addEventListener("click", () => {
-//     modal.classList.add("active");
-//   });
+        <script src="assets/vendor/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+        <!-- Bootstrap Colorpicker Js -->
+        <script src="assets/vendor/jquery-inputmask/jquery.inputmask.bundle.js"></script> <!-- Input Mask Plugin Js -->
+        <script src="assets/vendor/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+        <script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+        <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="assets/vendor/parsleyjs/js/parsley.min.js"></script>
+        <!-- Javascript -->
+        <!-- page js file -->
 
-//   // Đóng modal
-//   closeBtn.addEventListener("click", () => {
-//     modal.classList.remove("active");
-//   });
+        <script src="assets/vendor/toastr/toastr.js"></script>
 
-//   // Đóng modal khi click ngoài nội dung modal
-//   modal.addEventListener("click", (e) => {
-//     if (e.target === modal) {
-//       modal.classList.remove("active");
-//     }
-//   });
+        <script src="assets/bundles/mainscripts.bundle.js"></script>
+        <script src="../js/pages/forms/advanced-form-elements.js"></script>
+        <script>
+            $(function () {
+                // validation needs name of the element
+                $('#food').multiselect();
+                // initialize after multiselect
+                $('#basic-form').parsley();
+            });
+            //select open modal
+            const selectBox = document.getElementById("selectBox");
+            //const modal = document.getElementById("modal");
+            const treeRoot = document.getElementById("treeRoot");
 
-  // Mở/đóng nhánh khi click vào mục có con
-  treeRoot.querySelectorAll("li.has-children > span").forEach(span => {
-    span.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const parentLi = span.parentElement;
-      parentLi.classList.toggle("open");
-    });
-  });
+            // Mở/đóng nhánh khi click vào mục có con
+            treeRoot.querySelectorAll("li.has-children > span").forEach(span => {
+                span.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    const parentLi = span.parentElement;
+                    parentLi.classList.toggle("open");
+                });
+            });
 
-  // Chọn mục (chỉ mục lá)
-  treeRoot.querySelectorAll("li:not(.has-children) > span").forEach(span => {
-    span.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const value = span.getAttribute("data-value");
-      const text = span.textContent;
-      selectBox.textContent = text;
-    //  modal.classList.remove("active");
-   //   var myModalEl = document.getElementById('modal');
-      $('[data-dismiss="modal"]').trigger('click')
-    });
-  });    
-</script>
+            // Chọn mục (chỉ mục lá)
+            treeRoot.querySelectorAll("li:not(.has-children) > span").forEach(span => {
+                span.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    const value = span.getAttribute("data-value");
+                    const text = span.textContent;
+                    selectBox.textContent = text;
+                    //  modal.classList.remove("active");
+                    //   var myModalEl = document.getElementById('modal');
+                    $('[data-dismiss="modal"]').trigger('click')
+                });
+            });    
+        </script>
+
+
+        <script>
+            $(function () {
+                $('.btn-toastr').on('click', function () {
+                    $context = $(this).data('context');
+                    $message = $(this).data('message');
+                    $position = $(this).data('position');
+
+                    if ($context === '') {
+                        $context = 'info';
+                    }
+
+                    if ($position === '') {
+                        $positionClass = 'toast-bottom-right';
+                    } else {
+                        $positionClass = 'toast-' + $position;
+                    }
+
+                    toastr.remove();
+                    toastr[$context]($message, '', {
+                        positionClass: $positionClass
+                    });
+                });
+
+                $('#toastr-callback1').on('click', function () {
+                    $message = $(this).data('message');
+
+                    toastr.options = {
+                        "timeOut": "300",
+                        "onShown": function () {
+                            alert('onShown callback');
+                        },
+                        "onHidden": function () {
+                            alert('onHidden callback');
+                        }
+                    };
+
+                    toastr['info']($message);
+                });
+
+                $('#toastr-callback2').on('click', function () {
+                    $message = $(this).data('message');
+
+                    toastr.options = {
+                        "timeOut": "10000",
+                        "onclick": function () {
+                            alert('onclick callback');
+                        },
+                    };
+
+                    toastr['info']($message);
+
+                });
+
+                $('#toastr-callback3').on('click', function () {
+                    $message = $(this).data('message');
+
+                    toastr.options = {
+                        "timeOut": "10000",
+                        "closeButton": true,
+                        "onCloseClick": function () {
+                            alert('onCloseClick callback');
+                        }
+                    };
+
+                    toastr['info']($message);
+                });
+            });
+        </script>
 </body>
+
 </html>
