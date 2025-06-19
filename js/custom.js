@@ -4,11 +4,11 @@ $(function() {
     // Multiselect
         if($('.multiselect').length>0){
             $('.multiselect').multiselect({
-                maxHeight: 300
+                maxHeight: 300,enableFiltering: true,
             });
         }
         $('.single-selection').multiselect({
-            maxHeight: 300
+            maxHeight: 300, enableFiltering: true,
         });
         $('.btn-close').on('click', function() {
 		    $('body').removeClass('offcanvas-right');

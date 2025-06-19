@@ -47,7 +47,7 @@ $(function() {
 
     // Multiselect
     $('#multiselect1, #multiselect2, .single-selection, #multiselect5, #multiselect6').multiselect({
-        maxHeight: 300
+        maxHeight: 300,enableFiltering: true,
     });
     //Multi-select
    // $('#optgroup').multiSelect({ selectableOptgroup: true });
@@ -81,29 +81,29 @@ $(function() {
 
 
     $('#multiselect3-all').multiselect({
-        includeSelectAllOption: true,
+        includeSelectAllOption: true,enableFiltering: true,
     });
 
     $('#multiselect4-filter').multiselect({
-        enableFiltering: true,
+        //enableFiltering: true,
         enableCaseInsensitiveFiltering: true,
         maxHeight: 200
     });
 
     $('#multiselect-size').multiselect({
-        buttonClass: 'btn btn-default btn-sm'
+        buttonClass: 'btn btn-default btn-sm',enableFiltering: true,
     });
 
     $('#multiselect-link').multiselect({
-        buttonClass: 'btn btn-link'
+        buttonClass: 'btn btn-link',enableFiltering: true,
     });
 
     $('#multiselect-color').multiselect({
-        buttonClass: 'btn btn-primary'
+        buttonClass: 'btn btn-primary',enableFiltering: true,
     });
 
     $('#multiselect-color2').multiselect({
-        buttonClass: 'btn btn-success'
+        buttonClass: 'btn btn-success',enableFiltering: true,
     });
 
 

@@ -136,11 +136,24 @@
 .navbar-center{
     flex-direction: row;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     vertical-align: middle;
     align-items: center;
     list-style: none;
     margin: 0;
+    padding: 0;
+}
+.navbar-center .nav-item a{
+    padding: 0;
+    border-bottom: solid 1px transparent;
+    color: var(--font-xlight);
+}
+.navbar-center .nav-item a:hover,
+.navbar-center .nav-item.active a{
+    border-bottom: solid 1px var(--font-xlight);
+}
+.navbar-center .nav-item.active a{
+    font-weight: bold;
 }
 .setting_skin{
     position: fixed;
@@ -155,6 +168,38 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.offcanvas-right .btn-close::before{
+    background-color: rgba(0, 0, 0, 0.382);
+    width: calc(100% - 280px);
+    height: 100%;
+    content: '';
+    position: fixed;
+    left: 0;
+    top:0;
+    transition: all ease-in-out 1s;
+}
+.click_toggle{
+    cursor: pointer;
+}
+.click_toggle.active .fa-plus{
+    display: none;
+}
+.click_toggle:not(.active) .fa-minus{
+    display: none;
+}
+.right-box th{
+    padding-right: 10px;
+}
+.multiselect-container .input-group{
+    margin: 5px 0;
+}
+.multiselect-container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.modal-header .title{
+    margin: 0;
 }
   /* Ô Select chính */
   .tree-select-modal {

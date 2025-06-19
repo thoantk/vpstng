@@ -8,6 +8,9 @@
 a{
     color: inherit;
 }
+img{
+    max-width: 100%;
+}
 [data-icon]:before {
     font-family: 'simple-Line-Icons';
     content: attr(data-icon);
@@ -2846,10 +2849,20 @@ html.fullscreen-bg,html.fullscreen-bg body,html.fullscreen-bg #wrapper {
     left: 280px;
     width: calc(100% - 330px);
     z-index: 99;
-    background: linear-gradient(360deg, rgba(69, 102, 0, 0) 0%, var(--primary-color) 100%);
-    /* border-bottom: solid 1px var(--border-color); */
+    background-color: var(--primary-color);
+    color: var(--font-xlight);
+    /* background: linear-gradient(360deg, rgba(69, 102, 0, 0) 0%, var(--primary-color) 100%); */
+    border-bottom: solid 1px var(--border-color);
 }
-
+.navbar-right .nav {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-right .nav a:hover{
+    color: var(--font-xlight);
+}
 .navbar-fixed-top .navbar-brand {
     margin: 0;
     position: relative
@@ -2863,7 +2876,7 @@ html.fullscreen-bg,html.fullscreen-bg body,html.fullscreen-bg #wrapper {
 
 .navbar-fixed-top .navbar-brand button {
     padding: 0;
-    color: var(--primary-color);
+    color: var(--body-color);
     font-size: 20px;
     line-height: .7;
     border: none;
@@ -2903,7 +2916,7 @@ html.fullscreen-bg,html.fullscreen-bg body,html.fullscreen-bg #wrapper {
 }
 
 .navbar-nav .icon-menu i {
-    color: var(--font-color)
+    color: var(--font-xlight)
 }
 
 .navbar-nav .icon-menu::after {
@@ -2919,7 +2932,7 @@ html.fullscreen-bg,html.fullscreen-bg body,html.fullscreen-bg #wrapper {
     position: absolute;
     top: 12px;
     right: 7px;
-    background-color: var(--dark-color)
+    background-color: var(--danger);
 }
 
 .navbar-nav .dropdown-menu {
@@ -2938,7 +2951,8 @@ html.fullscreen-bg,html.fullscreen-bg body,html.fullscreen-bg #wrapper {
 .navbar-nav ul.notifications {
     background: var(--white-color);
     overflow: hidden;
-    width: 350px
+    width: 350px;
+    max-height:unset;
 }
 
 @media screen and (max-width: 768px) {
@@ -3380,7 +3394,7 @@ html.fullscreen-bg,html.fullscreen-bg body,html.fullscreen-bg #wrapper {
 }
 
 .sidebar-nav .metismenu>li i {
-    width: 28px
+    padding-right: 8px;
 }
 
 .sidebar-nav .metismenu a {
@@ -4156,10 +4170,6 @@ select.form-control:not([size]):not([multiple]) {
     font-size: 13px
 }
 
-.block-header .breadcrumb a {
-    color: var(--text-muted)
-}
-
 #toast-container>div {
     opacity: 1;
     filter: alpha(opacity=100)
@@ -4248,8 +4258,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .toggle-switch input:checked+.toggle-switch-slider::before {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color)
+    background-color: var(--font-xlight);
+    border-color: var(--font-xlight)
 }
 
 .toggle-switch input:checked+.toggle-switch-slider::before {
@@ -4259,7 +4269,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .toggle-switch input:checked+.toggle-switch-slider {
-    border: 0.0525rem solid var(--primary-color)
+    border: 0.0525rem solid var(--font-xlight)
 }
 
 .toggle-switch .toggle-switch-slider {
@@ -4274,7 +4284,7 @@ select.form-control:not([size]):not([multiple]) {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 0.0625rem solid var(--font-color);
+    border: 0.0625rem solid var(--font-xlight);
     border-radius: .18rem;
     background-color: transparent
 }
@@ -4292,7 +4302,7 @@ select.form-control:not([size]):not([multiple]) {
     left: .0625rem;
     bottom: 2px;
     border-radius: .18rem;
-    background-color: var(--font-color)
+    background-color: var(--font-xlight)
 }
 
 .toggle-switch+span {
@@ -7476,7 +7486,7 @@ hr {
     border-color: var(--border-color)
 }
 
-.inlineblock,.card,.card .header .header-dropdown li,.navbar-fixed-top .navbar-right .navbar-nav,.navbar-fixed-top .navbar-right .navbar-nav>li,.user-account .dropdown,ul.choose-skin li div,.wizard>.actions ul,.tabcontrol>.steps>ul>li>a,.tabcontrol>.content,.chat-widget li.right .chat-info,.chat-widget li .chat-info,.info-box-2 .icon,.info-box-2 .content,.weather .days li,.weather3 .top .wrapper .temp .temp-value,.weather3 .top .wrapper .temp .deg,.stats-report .stat-item,.new_timeline .header .color-overlay .day-number,.new_timeline .header .color-overlay .date-right,.new_timeline li div,.team-info li,.chart.easy-pie-chart-1,.c_list .c_name,.right_chat .media .message,.right_chat .media .status,.dt-bootstrap4 .dt-buttons,.dt-bootstrap4 .dataTables_info,.dt-bootstrap4 .dt-buttons+.dataTables_filter,.dt-bootstrap4 .dt-buttons+.dataTables_paginate,.dt-bootstrap4 .dataTables_info+.dataTables_filter,.dt-bootstrap4 .dataTables_info+.dataTables_paginate,.social_icon,.member-card .social-links li {
+.inlineblock,.card,.card .header .header-dropdown li,.user-account .dropdown,ul.choose-skin li div,.wizard>.actions ul,.tabcontrol>.steps>ul>li>a,.tabcontrol>.content,.chat-widget li.right .chat-info,.chat-widget li .chat-info,.info-box-2 .icon,.info-box-2 .content,.weather .days li,.weather3 .top .wrapper .temp .temp-value,.weather3 .top .wrapper .temp .deg,.stats-report .stat-item,.new_timeline .header .color-overlay .day-number,.new_timeline .header .color-overlay .date-right,.new_timeline li div,.team-info li,.chart.easy-pie-chart-1,.c_list .c_name,.right_chat .media .message,.right_chat .media .status,.dt-bootstrap4 .dt-buttons,.dt-bootstrap4 .dataTables_info,.dt-bootstrap4 .dt-buttons+.dataTables_filter,.dt-bootstrap4 .dt-buttons+.dataTables_paginate,.dt-bootstrap4 .dataTables_info+.dataTables_filter,.dt-bootstrap4 .dataTables_info+.dataTables_paginate,.social_icon,.member-card .social-links li {
     display: inline-block
 }
 
@@ -7878,7 +7888,7 @@ hr {
 
 .table tbody tr td,.table tbody th td {
     vertical-align: middle;
-    white-space: nowrap
+    /* white-space: nowrap */
 }
 
 .table tbody tr:hover {
@@ -7891,7 +7901,8 @@ hr {
 
 .table thead th {
     border-bottom-color: var(--primary-color);
-    border-top-color: var(--border-color)
+    border-top-color: var(--border-color);
+    vertical-align: middle;
 }
 
 .page-loader-wrapper {
