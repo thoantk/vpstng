@@ -125,7 +125,7 @@ $(document).ready(function() {
 		if($(window).innerWidth() < 1280) {
 			$('body').addClass('layout-fullwidth sidebar_toggle');
 		} else {
-			$('body').removeClass('layout-fullwidth sidebar_toggle');
+			//$('body').removeClass('layout-fullwidth sidebar_toggle');
 		}
 	});
 });

@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css" />
     <link rel="stylesheet" href="assets/vendor/parsleyjs/css/parsley.css">
-    <link rel="stylesheet" href="assets/vendor/table-bootstrap/css/bootstrap-table.min.css">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -47,13 +46,13 @@
                 </div>
                 <ul class="navbar-center">
 
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="vanban-noibo.html"><i class="fa fa-retweet"></i> VB nội bộ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="vanban-den.html"><i class="fa fa-download"></i> VB đến</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="vanban-di.html"><i class="fa fa-upload"></i> VB đi</a>
                     </li>
                 </ul>
@@ -235,7 +234,7 @@
                 </div>
                 <nav id="left-sidebar-nav" class="sidebar-nav">
                     <ul id="main-menu" class="metismenu li_animation_delay">
-                        <li class="active">
+                        <li>
                             <a href="vanban-noibo.html" class="has-arrow"><i class="fa fa-retweet"></i>
                                 <span>VB Nội bộ</span></a>
                             <ul class="nav ulnav">
@@ -316,7 +315,6 @@
                         <li>
                             <a href="" class="has-arrow"><i class="fa fa-download"></i>
                                 <span>VB Đến</span></a>
-
                             <ul class="nav ulnav">
                                 <li class="nav-item">
                                     <span class="nav-link"><button class="btn btn-primary btn-sm"
@@ -365,7 +363,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="" class="has-arrow"><i class="fa fa-upload"></i>
                                 <span>VB Đi</span></a>
                             <ul class="nav ulnav">
@@ -568,7 +566,7 @@
                                 <li class="nav-item header">
                                 </li>
                                 <li class="nav-item">
-                                    
+                                    &nbsp;
                                 </li>
                             </ul>
                         </li>
@@ -676,69 +674,87 @@
                                                         class="single-selection multiselect-custom">
                                                         <option value="">Tất cả</option>
                                                         <option value="49">TNG Land</option>
-                                                        <option value="6">Đại hội đồng cổ đông</option>
-                                                        <option value="481">Đảng bộ Cty TNG</option>
-                                                        <option value="518">Chủ Tịch Hội Đồng Quản Trị </option>
-                                                        <option value="274">Chi nhánh may Việt Đức</option>
-                                                        <option value="275">Chi nhánh may Việt Thái</option>
-                                                        <option value="276">Chi nhánh may Đại Từ</option>
-                                                        <option value="277">Chi nhánh may Sông Công 1</option>
-                                                        <option value="278">Chi nhánh may Sông Công 2</option>
-                                                        <option value="279">Chi nhánh may Sông Công 3</option>
-                                                        <option value="280">Chi nhánh may Sông Công 4</option>
-                                                        <option value="281">Chi nhánh may Phú Bình 1</option>
-                                                        <option value="282">Chi nhánh may Phú Bình 2</option>
-                                                        <option value="283">Chi nhánh may Phú Bình 3</option>
-                                                        <option value="284">Chi nhánh may Phú Bình 4</option>
-                                                        <option value="285">Chi nhánh may Đồng Hỷ</option>
-                                                        <option value="286">Chi nhánh may Võ Nhai 1</option>
-                                                        <option value="287">Chi nhánh may Võ Nhai 2</option>
-                                                        <option value="288">Chi nhánh Thời Trang TNG</option>
-                                                        <option value="289">Chi nhánh sản xuất Bông</option>
-                                                        <option value="290">Chi nhánh sản xuất Bao bì</option>
-                                                        <option value="291">Văn phòng công ty</option>
-                                                        <option value="210">--Ban
+                                                        <option value="6">&nbsp;Đại hội đồng cổ đông</option>
+                                                        <option value="481">&nbsp;Đảng bộ Cty TNG</option>
+                                                        <option value="518">&nbsp;Chủ Tịch Hội Đồng Quản Trị </option>
+                                                        <option value="274">&nbsp;Chi nhánh may Việt Đức</option>
+                                                        <option value="275">&nbsp;Chi nhánh may Việt Thái</option>
+                                                        <option value="276">&nbsp;Chi nhánh may Đại Từ</option>
+                                                        <option value="277">&nbsp;Chi nhánh may Sông Công 1</option>
+                                                        <option value="278">&nbsp;Chi nhánh may Sông Công 2</option>
+                                                        <option value="279">&nbsp;Chi nhánh may Sông Công 3</option>
+                                                        <option value="280">&nbsp;Chi nhánh may Sông Công 4</option>
+                                                        <option value="281">&nbsp;Chi nhánh may Phú Bình 1</option>
+                                                        <option value="282">&nbsp;Chi nhánh may Phú Bình 2</option>
+                                                        <option value="283">&nbsp;Chi nhánh may Phú Bình 3</option>
+                                                        <option value="284">&nbsp;Chi nhánh may Phú Bình 4</option>
+                                                        <option value="285">&nbsp;Chi nhánh may Đồng Hỷ</option>
+                                                        <option value="286">&nbsp;Chi nhánh may Võ Nhai 1</option>
+                                                        <option value="287">&nbsp;Chi nhánh may Võ Nhai 2</option>
+                                                        <option value="288">&nbsp;Chi nhánh Thời Trang TNG</option>
+                                                        <option value="289">&nbsp;Chi nhánh sản xuất Bông</option>
+                                                        <option value="290">&nbsp;Chi nhánh sản xuất Bao bì</option>
+                                                        <option value="291">&nbsp;Văn phòng công ty</option>
+                                                        <option value="210">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ban
                                                             kiểm toán nội bộ</option>
-                                                        <option value="411">--Phòng
+                                                        <option value="411">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng
                                                             kỹ thuật</option>
-                                                        <option value="299">--Tổng
+                                                        <option value="299">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tổng
                                                             Giám Đốc</option>
-                                                        <option value="300">--PTGĐ
+                                                        <option value="300">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PTGĐ
                                                             Kinh Doanh</option>
-                                                        <option value="307">--PTGĐ
+                                                        <option value="307">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PTGĐ
                                                             Kỹ thuật - Chất lượng</option>
-                                                        <option value="306">--PTGĐ
+                                                        <option value="306">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PTGĐ
                                                             Nhân sự</option>
-                                                        <option value="310">--PTGĐ
+                                                        <option value="310">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PTGĐ
                                                             Công nghệ cao</option>
-                                                        <option value="301">--Kế
+                                                        <option value="301">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kế
                                                             Toán Trưởng</option>
-                                                        <option value="303">--P.Kinh doanh - Kế hoạch sản xuất</option>
-                                                        <option value="302">--P.Quản lý thiết bị</option>
-                                                        <option value="305">--P.Công nghệ</option>
-                                                        <option value="304">--P.Quản lý chất Lượng</option>
-                                                        <option value="297">--P.Tổ
+                                                        <option value="303">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Kinh doanh - Kế hoạch sản xuất</option>
+                                                        <option value="302">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Quản lý thiết bị</option>
+                                                        <option value="305">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Công nghệ</option>
+                                                        <option value="304">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Quản lý chất Lượng</option>
+                                                        <option value="297">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Tổ
                                                             chức hành chính</option>
-                                                        <option value="298">--P.Kế
+                                                        <option value="298">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Kế
                                                             toán</option>
-                                                        <option value="309">--P.Đánh giá - Bảo hộ - An toàn vệ sinh lao động</option>
-                                                        <option value="308">--Phòng
+                                                        <option value="309">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Đánh giá - Bảo hộ - An toàn vệ sinh lao động</option>
+                                                        <option value="308">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng
                                                             Gym</option>
-                                                        <option value="292">Văn phòng đoàn thể</option>
-                                                        <option value="360">--Công
+                                                        <option value="292">&nbsp;Văn phòng đoàn thể</option>
+                                                        <option value="360">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Công
                                                             Đoàn</option>
-                                                        <option value="361">--Truyền
+                                                        <option value="361">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Truyền
                                                             Thông</option>
-                                                        <option value="362">--Đoàn
+                                                        <option value="362">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đoàn
                                                             thanh niên</option>
-                                                        <option value="293">Hội đồng quản trị</option>
-                                                        <option value="294">Chi nhánh Giải pháp công nghệ TRE
+                                                        <option value="293">&nbsp;Hội đồng quản trị</option>
+                                                        <option value="294">&nbsp;Chi nhánh Giải pháp công nghệ TRE
                                                         </option>
-                                                        <option value="295">Chi nhánh TOT (Công nghệ tự động hóa
+                                                        <option value="295">&nbsp;Chi nhánh TOT (Công nghệ tự động hóa
                                                             TNG)
                                                         </option>
-                                                        <option value="296">Phòng Xuất nhập khẩu</option>
-                                                        <option value="311">Chi nhánh phát triển gia công</option>
+                                                        <option value="296">&nbsp;Phòng Xuất nhập khẩu</option>
+                                                        <option value="311">&nbsp;Chi nhánh phát triển gia công</option>
 
                                                     </select>
                                                 </div>
@@ -818,11 +834,11 @@
                 <div class="block-header">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <h2>Văn bản nội bộ</h2>
+                            <h2>Văn bản đi</h2>
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a>
                                 </li>
-                                <li class="breadcrumb-item active">Văn bản nội bộ</li>
+                                <li class="breadcrumb-item active">Văn bản đi</li>
                             </ul>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 list-btn-CV">
@@ -846,35 +862,35 @@
                     <div class="col-lg-12">
                         <div class="table-responsive">
                             <table data-toggle="table" data-search="true" data-show-columns="true"
-                                data-toolbar="#sortable" data-mobile-responsive="true" data-url="assets/data/vanban.json"
-                                                                class="table table-bordered table-hover table-js">
+                                data-toolbar="#sortable" data-mobile-responsive="true"
+                                class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th data-field="TT" >
+                                        <th data-field="0">
                                             <div class="th-inner ">TT</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th data-field="Tên văn bản">
+                                        <th data-field="1">
                                             <div class="th-inner ">Tên văn bản</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th data-field="Số văn bản" style="width:180px">
+                                        <th style="width:180px" data-field="2">
                                             <div class="th-inner ">Số văn bản</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th data-field="Loại văn bản">
+                                        <th data-field="3">
                                             <div class="th-inner ">Loại văn bản</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th data-field="Cơ quan ban hành">
+                                        <th data-field="4">
                                             <div class="th-inner ">Cơ quan ban hành</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th  data-field="Ngày duyệt" style="width:120px">
+                                        <th style="width:120px" data-field="5">
                                             <div class="th-inner ">Ngày duyệt</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th  data-field="Người duyệt" style="width:180px">
+                                        <th style="width:180px" data-field="6">
                                             <div class="th-inner ">Người duyệt</div>
                                             <div class="fht-cell"></div>
                                         </th>
@@ -1387,7 +1403,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </div>                        
                     </div>
                     <div class="col-lg-12 justify-content-center mt-5">
                         <ul class="body pagination pagination-primary">
@@ -1410,7 +1426,7 @@
                 <div class="modal-content">
                     <form id="frmData" class="validate-form" data-parsley-validate>
                         <div class="modal-header">
-                            <h4 class="title" id="largeModalLabel">Thêm mới văn bản nội bộ</h4>
+                            <h4 class="title" id="largeModalLabel">Thêm mới</h4>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">
@@ -1423,6 +1439,7 @@
                                         <label class="control-label">Dạng văn bản *</label>
                                         <select class="form-control" name="isUpload" onchange="ChangeType()" required
                                             data-parsley-required-message="Vui lòng chọn dạng văn bản">
+                                            <option value="">-- Chọn dạng văn bản --</option>
                                             <option value="false">Văn bản mới</option>
                                             <option value="true">Văn bản đã có</option>
                                         </select>
@@ -1515,7 +1532,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <!-- Javascript -->
     <script src="assets/bundles/libscripts.bundle.js"></script>
@@ -1527,7 +1543,6 @@
     <script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
     <script src="assets/bundles/mainscripts.bundle.js"></script>
     <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script src="assets/vendor/table-bootstrap/js/bootstrap-table.min.js"></script>
     <!-- bootstrap datepicker Plugin Js -->
     <script src="assets/vendor/parsleyjs/js/parsley.min.js"></script>
     <script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
@@ -1536,11 +1551,8 @@
     <script>
         $(function () {
             $('.validate-form').parsley();
-            $('.table-js').bootstrapTable();
         });
     </script>
-
-
 </body>
 
 </html>

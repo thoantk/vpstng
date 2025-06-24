@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css" />
     <link rel="stylesheet" href="assets/vendor/parsleyjs/css/parsley.css">
-    <link rel="stylesheet" href="assets/vendor/table-bootstrap/css/bootstrap-table.min.css">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -47,10 +46,10 @@
                 </div>
                 <ul class="navbar-center">
 
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="vanban-noibo.html"><i class="fa fa-retweet"></i> VB nội bộ</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="vanban-den.html"><i class="fa fa-download"></i> VB đến</a>
                     </li>
                     <li class="nav-item">
@@ -235,7 +234,7 @@
                 </div>
                 <nav id="left-sidebar-nav" class="sidebar-nav">
                     <ul id="main-menu" class="metismenu li_animation_delay">
-                        <li class="active">
+                        <li>
                             <a href="vanban-noibo.html" class="has-arrow"><i class="fa fa-retweet"></i>
                                 <span>VB Nội bộ</span></a>
                             <ul class="nav ulnav">
@@ -313,10 +312,9 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="" class="has-arrow"><i class="fa fa-download"></i>
                                 <span>VB Đến</span></a>
-
                             <ul class="nav ulnav">
                                 <li class="nav-item">
                                     <span class="nav-link"><button class="btn btn-primary btn-sm"
@@ -568,7 +566,7 @@
                                 <li class="nav-item header">
                                 </li>
                                 <li class="nav-item">
-                                    
+                                    &nbsp;
                                 </li>
                             </ul>
                         </li>
@@ -676,69 +674,87 @@
                                                         class="single-selection multiselect-custom">
                                                         <option value="">Tất cả</option>
                                                         <option value="49">TNG Land</option>
-                                                        <option value="6">Đại hội đồng cổ đông</option>
-                                                        <option value="481">Đảng bộ Cty TNG</option>
-                                                        <option value="518">Chủ Tịch Hội Đồng Quản Trị </option>
-                                                        <option value="274">Chi nhánh may Việt Đức</option>
-                                                        <option value="275">Chi nhánh may Việt Thái</option>
-                                                        <option value="276">Chi nhánh may Đại Từ</option>
-                                                        <option value="277">Chi nhánh may Sông Công 1</option>
-                                                        <option value="278">Chi nhánh may Sông Công 2</option>
-                                                        <option value="279">Chi nhánh may Sông Công 3</option>
-                                                        <option value="280">Chi nhánh may Sông Công 4</option>
-                                                        <option value="281">Chi nhánh may Phú Bình 1</option>
-                                                        <option value="282">Chi nhánh may Phú Bình 2</option>
-                                                        <option value="283">Chi nhánh may Phú Bình 3</option>
-                                                        <option value="284">Chi nhánh may Phú Bình 4</option>
-                                                        <option value="285">Chi nhánh may Đồng Hỷ</option>
-                                                        <option value="286">Chi nhánh may Võ Nhai 1</option>
-                                                        <option value="287">Chi nhánh may Võ Nhai 2</option>
-                                                        <option value="288">Chi nhánh Thời Trang TNG</option>
-                                                        <option value="289">Chi nhánh sản xuất Bông</option>
-                                                        <option value="290">Chi nhánh sản xuất Bao bì</option>
-                                                        <option value="291">Văn phòng công ty</option>
-                                                        <option value="210">--Ban
+                                                        <option value="6">&nbsp;Đại hội đồng cổ đông</option>
+                                                        <option value="481">&nbsp;Đảng bộ Cty TNG</option>
+                                                        <option value="518">&nbsp;Chủ Tịch Hội Đồng Quản Trị </option>
+                                                        <option value="274">&nbsp;Chi nhánh may Việt Đức</option>
+                                                        <option value="275">&nbsp;Chi nhánh may Việt Thái</option>
+                                                        <option value="276">&nbsp;Chi nhánh may Đại Từ</option>
+                                                        <option value="277">&nbsp;Chi nhánh may Sông Công 1</option>
+                                                        <option value="278">&nbsp;Chi nhánh may Sông Công 2</option>
+                                                        <option value="279">&nbsp;Chi nhánh may Sông Công 3</option>
+                                                        <option value="280">&nbsp;Chi nhánh may Sông Công 4</option>
+                                                        <option value="281">&nbsp;Chi nhánh may Phú Bình 1</option>
+                                                        <option value="282">&nbsp;Chi nhánh may Phú Bình 2</option>
+                                                        <option value="283">&nbsp;Chi nhánh may Phú Bình 3</option>
+                                                        <option value="284">&nbsp;Chi nhánh may Phú Bình 4</option>
+                                                        <option value="285">&nbsp;Chi nhánh may Đồng Hỷ</option>
+                                                        <option value="286">&nbsp;Chi nhánh may Võ Nhai 1</option>
+                                                        <option value="287">&nbsp;Chi nhánh may Võ Nhai 2</option>
+                                                        <option value="288">&nbsp;Chi nhánh Thời Trang TNG</option>
+                                                        <option value="289">&nbsp;Chi nhánh sản xuất Bông</option>
+                                                        <option value="290">&nbsp;Chi nhánh sản xuất Bao bì</option>
+                                                        <option value="291">&nbsp;Văn phòng công ty</option>
+                                                        <option value="210">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ban
                                                             kiểm toán nội bộ</option>
-                                                        <option value="411">--Phòng
+                                                        <option value="411">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng
                                                             kỹ thuật</option>
-                                                        <option value="299">--Tổng
+                                                        <option value="299">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tổng
                                                             Giám Đốc</option>
-                                                        <option value="300">--PTGĐ
+                                                        <option value="300">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PTGĐ
                                                             Kinh Doanh</option>
-                                                        <option value="307">--PTGĐ
+                                                        <option value="307">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PTGĐ
                                                             Kỹ thuật - Chất lượng</option>
-                                                        <option value="306">--PTGĐ
+                                                        <option value="306">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PTGĐ
                                                             Nhân sự</option>
-                                                        <option value="310">--PTGĐ
+                                                        <option value="310">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PTGĐ
                                                             Công nghệ cao</option>
-                                                        <option value="301">--Kế
+                                                        <option value="301">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kế
                                                             Toán Trưởng</option>
-                                                        <option value="303">--P.Kinh doanh - Kế hoạch sản xuất</option>
-                                                        <option value="302">--P.Quản lý thiết bị</option>
-                                                        <option value="305">--P.Công nghệ</option>
-                                                        <option value="304">--P.Quản lý chất Lượng</option>
-                                                        <option value="297">--P.Tổ
+                                                        <option value="303">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Kinh doanh - Kế hoạch sản xuất</option>
+                                                        <option value="302">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Quản lý thiết bị</option>
+                                                        <option value="305">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Công nghệ</option>
+                                                        <option value="304">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Quản lý chất Lượng</option>
+                                                        <option value="297">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Tổ
                                                             chức hành chính</option>
-                                                        <option value="298">--P.Kế
+                                                        <option value="298">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Kế
                                                             toán</option>
-                                                        <option value="309">--P.Đánh giá - Bảo hộ - An toàn vệ sinh lao động</option>
-                                                        <option value="308">--Phòng
+                                                        <option value="309">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.
+                                                            Đánh giá - Bảo hộ - An toàn vệ sinh lao động</option>
+                                                        <option value="308">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng
                                                             Gym</option>
-                                                        <option value="292">Văn phòng đoàn thể</option>
-                                                        <option value="360">--Công
+                                                        <option value="292">&nbsp;Văn phòng đoàn thể</option>
+                                                        <option value="360">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Công
                                                             Đoàn</option>
-                                                        <option value="361">--Truyền
+                                                        <option value="361">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Truyền
                                                             Thông</option>
-                                                        <option value="362">--Đoàn
+                                                        <option value="362">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đoàn
                                                             thanh niên</option>
-                                                        <option value="293">Hội đồng quản trị</option>
-                                                        <option value="294">Chi nhánh Giải pháp công nghệ TRE
+                                                        <option value="293">&nbsp;Hội đồng quản trị</option>
+                                                        <option value="294">&nbsp;Chi nhánh Giải pháp công nghệ TRE
                                                         </option>
-                                                        <option value="295">Chi nhánh TOT (Công nghệ tự động hóa
+                                                        <option value="295">&nbsp;Chi nhánh TOT (Công nghệ tự động hóa
                                                             TNG)
                                                         </option>
-                                                        <option value="296">Phòng Xuất nhập khẩu</option>
-                                                        <option value="311">Chi nhánh phát triển gia công</option>
+                                                        <option value="296">&nbsp;Phòng Xuất nhập khẩu</option>
+                                                        <option value="311">&nbsp;Chi nhánh phát triển gia công</option>
 
                                                     </select>
                                                 </div>
@@ -818,11 +834,11 @@
                 <div class="block-header">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <h2>Văn bản nội bộ</h2>
+                            <h2>Văn bản đến</h2>
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a>
                                 </li>
-                                <li class="breadcrumb-item active">Văn bản nội bộ</li>
+                                <li class="breadcrumb-item active">Văn bản đến</li>
                             </ul>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 list-btn-CV">
@@ -846,36 +862,40 @@
                     <div class="col-lg-12">
                         <div class="table-responsive">
                             <table data-toggle="table" data-search="true" data-show-columns="true"
-                                data-toolbar="#sortable" data-mobile-responsive="true" data-url="assets/data/vanban.json"
-                                                                class="table table-bordered table-hover table-js">
+                                data-toolbar="#sortable" data-mobile-responsive="true"
+                                class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th data-field="TT" >
+                                        <th style="width: 50px; " data-field="0">
                                             <div class="th-inner ">TT</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th data-field="Tên văn bản">
+                                        <th data-field="1">
                                             <div class="th-inner ">Tên văn bản</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th data-field="Số văn bản" style="width:180px">
-                                            <div class="th-inner ">Số văn bản</div>
+                                        <th style="width: 120px; " data-field="2">
+                                            <div class="th-inner ">Số công văn</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th data-field="Loại văn bản">
+                                        <th style="width: 100px; " data-field="3">
+                                            <div class="th-inner ">Ngày công văn</div>
+                                            <div class="fht-cell"></div>
+                                        </th>
+                                        <th data-field="4">
                                             <div class="th-inner ">Loại văn bản</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th data-field="Cơ quan ban hành">
+                                        <th style="width: 120px; " data-field="5">
                                             <div class="th-inner ">Cơ quan ban hành</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th  data-field="Ngày duyệt" style="width:120px">
-                                            <div class="th-inner ">Ngày duyệt</div>
+                                        <th style="width: 100px; " data-field="6">
+                                            <div class="th-inner ">Ngày nhận</div>
                                             <div class="fht-cell"></div>
                                         </th>
-                                        <th  data-field="Người duyệt" style="width:180px">
-                                            <div class="th-inner ">Người duyệt</div>
+                                        <th style="width: 100px; " data-field="7">
+                                            <div class="th-inner ">Trạng thái văn bản</div>
                                             <div class="fht-cell"></div>
                                         </th>
                                     </tr>
@@ -883,507 +903,39 @@
                                 <tbody>
                                     <tr data-index="0">
                                         <td>1</td>
-                                        <td><a href="chitiet-vanban.html?id=107393">VV CỬ CBNV ĐI ĐÁNH GIÁ NHÀ
-                                                CUNG CẤP MÁY IN, MÁY QUÉT, THIẾT BỊ RFID TẠI HÀ NỘI NGÀY 19/06/2025</a>
-                                        </td>
-                                        <td>10510/2025/QĐ-TNG</td>
-                                        <td>Quyết định</td>
-                                        <td>VPCT</td>
-                                        <td>19-06-2025</td>
-                                        <td>Lê Xuân Vĩ</td>
+                                        <td style="text-align: left; width: 350px; "><a class=""
+                                                href="chitiet-vbden.html?id=112">TEST</a></td>
+                                        <td>123123</td>
+                                        <td style="text-align: center; width: 100px; ">14-05-2025</td>
+                                        <td style="text-align: center; width: 100px; ">Đề nghị thanh toán</td>
+                                        <td>TRE</td>
+                                        <td style="text-align: center; width: 100px; ">14-05-2025</td>
+                                        <td><button class="btn btn-xs rounded-pill"
+                                                style="background:#ffffff;color:#000000">Văn bản mới</button></td>
                                     </tr>
                                     <tr data-index="1">
                                         <td>2</td>
-                                        <td><a href="chitiet-vanban.html?id=106745">SC3- QĐ chi tiền hỗ trợ
-                                                chi phí hồ sơ đối với lao động mới tháng 05/2025</a></td>
-                                        <td>10508/2025/QĐ-SC3</td>
-                                        <td>Quyết định</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
+                                        <td style="text-align: left; width: 350px; "><a class=""
+                                                href="chitiet-vbden.html?id=113">TEST</a></td>
+                                        <td>123123</td>
+                                        <td style="text-align: center; width: 100px; ">14-05-2025</td>
+                                        <td style="text-align: center; width: 100px; ">Đề nghị thanh toán</td>
+                                        <td>TRE</td>
+                                        <td style="text-align: center; width: 100px; ">14-05-2025</td>
+                                        <td><button class="btn btn-xs rounded-pill"
+                                                style="background:#ffffff;color:#000000">Văn bản mới</button></td>
                                     </tr>
                                     <tr data-index="2">
                                         <td>3</td>
-                                        <td><a href="chitiet-vanban.html?id=106909">SC3 - TỜ TRÌNH BỔ SUNG PHỤ
-                                                TÙNG SC3-L1-T6-2025 - PT</a></td>
-                                        <td>10506/2025/TTr-SC3</td>
-                                        <td>Tờ trình</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
-                                    </tr>
-                                    <tr data-index="3">
-                                        <td>4</td>
-                                        <td><a href="chitiet-vanban.html?id=106910">SC3 - TỜ TRÌNH BỔ SUNG VẬT
-                                                TƯ NHÀ CẮT CÔNG NGHỆ SC3-L1-T6-2025-PT</a></td>
-                                        <td>10505/2025/TTr-SC3</td>
-                                        <td>Tờ trình</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
-                                    </tr>
-                                    <tr data-index="4">
-                                        <td>5</td>
-                                        <td><a href="chitiet-vanban.html?id=106911">SC3 - TỜ TRÌNH BỔ SUNG
-                                                KHUÔN GĂNG TAY SC3-L1-T6-2025-TL</a></td>
-                                        <td>10504/2025/TTr-SC3</td>
-                                        <td>Tờ trình</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
-                                    </tr>
-                                    <tr data-index="5">
-                                        <td>6</td>
-                                        <td><a href="chitiet-vanban.html?id=106912">SC3 - TỜ TRÌNH BỔ SUNG BỘ
-                                                ĐĨA CHỈ SC3-L1-T6-2025-TL</a></td>
-                                        <td>10503/2025/TTr-SC3</td>
-                                        <td>Tờ trình</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
-                                    </tr>
-                                    <tr data-index="6">
-                                        <td>7</td>
-                                        <td><a href="chitiet-vanban.html?id=106914">SC3 - TỜ TRÌNH BỔ SUNG PHỤ
-                                                TÙNG SC3-L1-T6-2025-VP</a></td>
-                                        <td>10502/2025/TTr-SC3</td>
-                                        <td>Tờ trình</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
-                                    </tr>
-                                    <tr data-index="7">
-                                        <td>8</td>
-                                        <td><a href="chitiet-vanban.html?id=107141">ĐỀ NGHỊ THANH TOÁN CÔNG TY
-                                                XĂNG DẦU BẮC THÁI T6/2025-HĐ 214314,214354</a></td>
-                                        <td>10501/2025/ĐNTT-SC3</td>
-                                        <td>Đề nghị thanh toán</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
-                                    </tr>
-                                    <tr data-index="8">
-                                        <td>9</td>
-                                        <td><a href="chitiet-vanban.html?id=107144">ĐỀ NGHỊ THANH TOÁN CÔNG TY
-                                                XĂNG DẦU BẮC THÁI T6/2025 - HĐ 213373,213359</a></td>
-                                        <td>10500/2025/ĐNTT-SC3</td>
-                                        <td>Đề nghị thanh toán</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
-                                    </tr>
-                                    <tr data-index="9">
-                                        <td>10</td>
-                                        <td><a href="chitiet-vanban.html?id=107065">Đề nghị thanh toán giấy sơ
-                                                đồ tháng 6/2025</a></td>
-                                        <td>10499/2025/ĐNTT-SC3</td>
-                                        <td>Đề nghị thanh toán</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
-                                    </tr>
-                                    <tr data-index="10">
-                                        <td>11</td>
-                                        <td><a href="chitiet-vanban.html?id=107047">Đề nghị mua giấy sơ đồ
-                                                tháng 6/2025</a></td>
-                                        <td>10498/2025/ĐN-SC3</td>
-                                        <td>Đề nghị</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
-                                    </tr>
-                                    <tr data-index="11">
-                                        <td>12</td>
-                                        <td><a href="chitiet-vanban.html?id=107424">tờ trình mua bổ sung khuôn
-                                                là găng tay </a></td>
-                                        <td>10497/2025/TTr-SC3</td>
-                                        <td>Tờ trình</td>
-                                        <td>SC3</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Thị Phương</td>
-                                    </tr>
-                                    <tr data-index="12">
-                                        <td>13</td>
-                                        <td><a href="chitiet-vanban.html?id=107402">SC4 - TỜ TRÌNH THUÊ MÁY
-                                                LẬP TRÌNH ĐỂ PHỤC VỤ SẢN XUẤT.</a></td>
-                                        <td>10496/2025/TTr-SC4</td>
-                                        <td>Tờ trình</td>
-                                        <td>SC4</td>
-                                        <td>19-06-2025</td>
-                                        <td>Vũ Thị Ngần</td>
-                                    </tr>
-                                    <tr data-index="13">
-                                        <td>14</td>
-                                        <td><a href="chitiet-vanban.html?id=107195">Tổng hợp chạy tuần 24
-                                                09/6/2025 - 15/6/2025 TNG Runner</a></td>
-                                        <td>10495/2025/TTr-VPDT</td>
-                                        <td>Tờ trình</td>
-                                        <td>VPDT</td>
-                                        <td>19-06-2025</td>
-                                        <td>Nguyễn Đức Mạnh</td>
-                                    </tr>
-                                    <tr data-index="14">
-                                        <td>15</td>
-                                        <td><a href="chitiet-vanban.html?id=107179">ĐNTT chi phí sửa mạch đơn
-                                                vị TOT</a></td>
-                                        <td>10494/2025/ĐNTT-VN1</td>
-                                        <td>Đề nghị thanh toán</td>
-                                        <td>VN1</td>
-                                        <td>18-06-2025</td>
-                                        <td>Nguyễn Thị Tám</td>
-                                    </tr>
-                                    <tr data-index="15">
-                                        <td>16</td>
-                                        <td><a href="chitiet-vanban.html?id=106375">Biên bản sự việc: Kiểm
-                                                soát hệ thống - An toàn sản phẩm - Quản lý vật sắc nhọn ĐH</a></td>
-                                        <td>10493/2025/BB-TNG</td>
-                                        <td>Biên bản</td>
-                                        <td>VPCT</td>
-                                        <td>18-06-2025</td>
-                                        <td>Nguyễn Tuấn Cường</td>
-                                    </tr>
-                                    <tr data-index="16">
-                                        <td>17</td>
-                                        <td><a href="chitiet-vanban.html?id=107397">TOT - TTr v/v thuê xe đưa
-                                                đón CBNV đi công tác tại Hà Nội ngày 19/06/2025</a></td>
-                                        <td>10492/2025/TTr-TOT</td>
-                                        <td>Tờ trình</td>
-                                        <td>TOT</td>
-                                        <td>18-06-2025</td>
-                                        <td>Lê Xuân Vĩ</td>
-                                    </tr>
-                                    <tr data-index="17">
-                                        <td>18</td>
-                                        <td><a href="chitiet-vanban.html?id=103528">Thông báo mời nghiệm thu
-                                                gói thầu"Cung cấp, lắp đặt hệ thống camera Trạm xử lý nước - Cụm
-                                                Công nghiệp Sơn Cẩm"</a></td>
-                                        <td>10491/2025/TB-TRE</td>
-                                        <td>Thông báo</td>
+                                        <td style="text-align: left; width: 350px; "><a class="font-weight-bold"
+                                                href="chitiet-vbden.html?id=114">TEST</a></td>
+                                        <td>123123</td>
+                                        <td style="text-align: center; width: 100px; ">07-05-2025</td>
+                                        <td style="text-align: center; width: 100px; ">Đề nghị</td>
                                         <td>TRE</td>
-                                        <td>18-06-2025</td>
-                                        <td>Lê Xuân Vĩ</td>
-                                    </tr>
-                                    <tr data-index="18">
-                                        <td>19</td>
-                                        <td><a href="chitiet-vanban.html?id=107419">VN2 - KHEN THƯỞNG PHÁT
-                                                ĐỘNG THI ĐUA NGÀY 17/06/2025</a></td>
-                                        <td>10490/2025/QĐ-VN2</td>
-                                        <td>Quyết định</td>
-                                        <td>VN2</td>
-                                        <td>18-06-2025</td>
-                                        <td>Hoàng Đình Hảo</td>
-                                    </tr>
-                                    <tr data-index="19">
-                                        <td>20</td>
-                                        <td><a href="chitiet-vanban.html?id=106969">PB2_TT xin phê duyệt NCC
-                                                chỉ định của khách hàng s.Oliver 2025 3</a></td>
-                                        <td>10489/2025/TTr-PB2</td>
-                                        <td>Tờ trình</td>
-                                        <td>PB2</td>
-                                        <td>18-06-2025</td>
-                                        <td>Nguyễn Đức Mạnh</td>
-                                    </tr>
-                                    <tr data-index="20">
-                                        <td>21</td>
-                                        <td><a href="chitiet-vanban.html?id=107314">PHIẾU ĐĂNG KÝ THỰC HIỆN
-                                                ĐĂNG KÝ ĐGKH - CHI NHÁNH MAY PHÚ BÌNH 2</a></td>
-                                        <td>10488/2025/TTr-PB2</td>
-                                        <td>Tờ trình</td>
-                                        <td>PB2</td>
-                                        <td>18-06-2025</td>
-                                        <td>Tống Thị Hồng</td>
-                                    </tr>
-                                    <tr data-index="21">
-                                        <td>22</td>
-                                        <td><a href="chitiet-vanban.html?id=106992">PHIẾU ĐĂNG KÝ THỰC HIỆN
-                                                ĐĂNG KÝ ĐGKH - VT</a></td>
-                                        <td>10487/2025/TTr-VT</td>
-                                        <td>Tờ trình</td>
-                                        <td>VT</td>
-                                        <td>18-06-2025</td>
-                                        <td>Tống Thị Hồng</td>
-                                    </tr>
-                                    <tr data-index="22">
-                                        <td>23</td>
-                                        <td><a href="chitiet-vanban.html?id=107325">PB1 - Tờ trình mua vật tư
-                                                Phồn Thịnh - T6-2025</a></td>
-                                        <td>10486/2025/TTr-PB1</td>
-                                        <td>Tờ trình</td>
-                                        <td>PB1</td>
-                                        <td>18-06-2025</td>
-                                        <td>Phan Thị Cúc</td>
-                                    </tr>
-                                    <tr data-index="23">
-                                        <td>24</td>
-                                        <td><a href="chitiet-vanban.html?id=106730">TỜ TRÌNH MUA VẬT TƯ SỬA
-                                                CHỮA VT T6/2025</a></td>
-                                        <td>10485/2025/QT-VT</td>
-                                        <td>Quy trình</td>
-                                        <td>VT</td>
-                                        <td>18-06-2025</td>
-                                        <td>Đỗ Thị Thanh Sơn</td>
-                                    </tr>
-                                    <tr data-index="24">
-                                        <td>25</td>
-                                        <td><a href="chitiet-vanban.html?id=107407">VT - Gia hạn v/v thuê máy
-                                                lt khổ rộng phục vụ hàng comlombia , tcp, c</a></td>
-                                        <td>10484/2025/TTr-VT</td>
-                                        <td>Tờ trình</td>
-                                        <td>VT</td>
-                                        <td>18-06-2025</td>
-                                        <td>Đỗ Thị Thanh Sơn</td>
-                                    </tr>
-                                    <tr data-index="25">
-                                        <td>26</td>
-                                        <td><a href="chitiet-vanban.html?id=107408">VT - Gia hạn v/v thuê máy
-                                                lt khổ rộng phục vụ các mã tcp 7533</a></td>
-                                        <td>10483/2025/TTr-VT</td>
-                                        <td>Tờ trình</td>
-                                        <td>VT</td>
-                                        <td>18-06-2025</td>
-                                        <td>Đỗ Thị Thanh Sơn</td>
-                                    </tr>
-                                    <tr data-index="26">
-                                        <td>27</td>
-                                        <td><a href="chitiet-vanban.html?id=106345">Tờ trình đánh giá GRS
-                                                2025</a></td>
-                                        <td>10482/2025/TTr-TNG</td>
-                                        <td>Tờ trình</td>
-                                        <td>VPCT</td>
-                                        <td>18-06-2025</td>
-                                        <td>Nguyễn Đức Mạnh</td>
-                                    </tr>
-                                    <tr data-index="27">
-                                        <td>28</td>
-                                        <td><a href="chitiet-vanban.html?id=107390">Thông báo thực hiện Quy
-                                                trình họp chuẩn bị sản xuất</a></td>
-                                        <td>10481/2025/TB-TNG</td>
-                                        <td>Thông báo</td>
-                                        <td>VPCT</td>
-                                        <td>18-06-2025</td>
-                                        <td>Nguyễn Đức Mạnh</td>
-                                    </tr>
-                                    <tr data-index="28">
-                                        <td>29</td>
-                                        <td><a href="chitiet-vanban.html?id=106699">Tờ trình sắp xếp CBNV</a>
-                                        </td>
-                                        <td>10480/2025/TTr-TNGL</td>
-                                        <td>Tờ trình</td>
-                                        <td>TNGL</td>
-                                        <td>18-06-2025</td>
-                                        <td>Nguyễn Mạnh Linh</td>
-                                    </tr>
-                                    <tr data-index="29">
-                                        <td>30</td>
-                                        <td><a href="chitiet-vanban.html?id=107181">VV ký HĐNT năm 2025</a>
-                                        </td>
-                                        <td>10479/2025/TTr-Bao bì</td>
-                                        <td>Tờ trình</td>
-                                        <td>Bao bì</td>
-                                        <td>18-06-2025</td>
-                                        <td>Nguyễn Đức Mạnh</td>
-                                    </tr>
-                                    <tr data-index="30">
-                                        <td>31</td>
-                                        <td><a href="chitiet-vanban.html?id=106968">ĐNTT CTP + taxi di chuyển
-                                                Công ty CP X20 ngày 10/06 - 12/06/2025</a></td>
-                                        <td>10478/2025/ĐNTT-TRE</td>
-                                        <td>Đề nghị thanh toán</td>
-                                        <td>TRE</td>
-                                        <td>18-06-2025</td>
-                                        <td>Trần Thị Thu Hà</td>
-                                    </tr>
-                                    <tr data-index="31">
-                                        <td>32</td>
-                                        <td><a href="chitiet-vanban.html?id=107301">TTR SẮP XẾP THỦ KHO CHI
-                                                NHÁNH PHÚ BÌNH 3</a></td>
-                                        <td>10477/2025/TTr-PB4</td>
-                                        <td>Tờ trình</td>
-                                        <td>PB4</td>
-                                        <td>18-06-2025</td>
-                                        <td>Trần Minh Hiếu</td>
-                                    </tr>
-                                    <tr data-index="32">
-                                        <td>33</td>
-                                        <td><a href="chitiet-vanban.html?id=107428">VV CỬ CBNV ĐI LÀM VIỆC VỚI
-                                                KHÁCH HÀNG TẠI TP. HCM NGÀY 22/06 - 04/07/2025</a></td>
-                                        <td>10476/2025/QĐ-TRE</td>
-                                        <td>Quyết định</td>
-                                        <td>TRE</td>
-                                        <td>18-06-2025</td>
-                                        <td>Phạm Minh Hải</td>
-                                    </tr>
-                                    <tr data-index="33">
-                                        <td>34</td>
-                                        <td><a href="chitiet-vanban.html?id=107416">ĐNTT chi phí công tác theo
-                                                QĐ số QĐ 10365/2025/QĐ-HĐQT </a></td>
-                                        <td>10475/2025/ĐNTT-XNK</td>
-                                        <td>Đề nghị thanh toán</td>
-                                        <td>XNK</td>
-                                        <td>18-06-2025</td>
-                                        <td>Trần Minh Hiếu</td>
-                                    </tr>
-                                    <tr data-index="34">
-                                        <td>35</td>
-                                        <td><a href="chitiet-vanban.html?id=107389">VV CỬ CBNV ĐI CÔNG TÁC TẠI
-                                                CÔNG TY TNHH MTV X20 NAM ĐỊNH NGÀY 19/06 - 20/06/2025</a></td>
-                                        <td>10474/2025/QĐ-TRE</td>
-                                        <td>Quyết định</td>
-                                        <td>TRE</td>
-                                        <td>18-06-2025</td>
-                                        <td>Phạm Minh Hải</td>
-                                    </tr>
-                                    <tr data-index="35">
-                                        <td>36</td>
-                                        <td><a href="chitiet-vanban.html?id=107423">Báo cáo kiểm tra sau kiểm
-                                                toán đối với Công đoàn TNG v/v thực hiện kiến nghị BC kiểm toán và thực
-                                                hiện hỗ trợ từ Quỹ Tấm lòng vàng TNG</a></td>
-                                        <td>10473/2025/BC-TNG</td>
-                                        <td>Báo cáo</td>
-                                        <td>Ban KTNB</td>
-                                        <td>18-06-2025</td>
-                                        <td>Đào Đức Thanh</td>
-                                    </tr>
-                                    <tr data-index="36">
-                                        <td>37</td>
-                                        <td><a href="chitiet-vanban.html?id=102569">Khen thưởng đột xuất đánh
-                                                giá Costco Canada</a></td>
-                                        <td>10472/2025/TTr-TNG</td>
-                                        <td>Tờ trình</td>
-                                        <td>VPCT</td>
-                                        <td>18-06-2025</td>
-                                        <td>Đoàn Thị Thu</td>
-                                    </tr>
-                                    <tr data-index="37">
-                                        <td>38</td>
-                                        <td><a href="chitiet-vanban.html?id=107411">PB3 - Đề nghị thanh toán
-                                                chi phí thuê Pallet </a></td>
-                                        <td>10471/2025/ĐNTT-PB3</td>
-                                        <td>Đề nghị thanh toán</td>
-                                        <td>PB3</td>
-                                        <td>18-06-2025</td>
-                                        <td>Trương Thị Giang Thức</td>
-                                    </tr>
-                                    <tr data-index="38">
-                                        <td>39</td>
-                                        <td><a href="chitiet-vanban.html?id=107227">PB3 - TB nhắc nhở CBCNV vi
-                                                phạm nội quy (QL vật sắc nhọn)</a></td>
-                                        <td>10470/2025/TB-PB3</td>
-                                        <td>Thông báo</td>
-                                        <td>PB3</td>
-                                        <td>18-06-2025</td>
-                                        <td>Trương Thị Giang Thức</td>
-                                    </tr>
-                                    <tr data-index="39">
-                                        <td>40</td>
-                                        <td><a href="chitiet-vanban.html?id=107304">VN2 - TB NHẮC NHỞ CBCNV VI
-                                                PHẠM NỘI QUY LAO ĐỘNG CÔNG TY</a></td>
-                                        <td>10469/2025/TB-VN2</td>
-                                        <td>Thông báo</td>
-                                        <td>VN2</td>
-                                        <td>18-06-2025</td>
-                                        <td>Hoàng Đình Hảo</td>
-                                    </tr>
-                                    <tr data-index="40">
-                                        <td>41</td>
-                                        <td><a href="chitiet-vanban.html?id=107131">VN2-THÔNG BÁO THỰC HIỆN
-                                                DUY TRÌ NỘI QUY TẠI CHI NHÁNH</a></td>
-                                        <td>10468/2025/TB-VN2</td>
-                                        <td>Thông báo</td>
-                                        <td>VN2</td>
-                                        <td>18-06-2025</td>
-                                        <td>Hoàng Đình Hảo</td>
-                                    </tr>
-                                    <tr data-index="41">
-                                        <td>42</td>
-                                        <td><a href="chitiet-vanban.html?id=107343">Đề nghị mua vật tư T6</a>
-                                        </td>
-                                        <td>10467/2025/ĐN-Bao bì</td>
-                                        <td>Đề nghị</td>
-                                        <td>Bao bì</td>
-                                        <td>18-06-2025</td>
-                                        <td>Lã Anh Chiến</td>
-                                    </tr>
-                                    <tr data-index="42">
-                                        <td>43</td>
-                                        <td><a href="chitiet-vanban.html?id=106949">Đề nghị thanh toán Tiền
-                                                cước xe ôm tháng 05/2025 - X In, PE BB</a></td>
-                                        <td>10466/2025/ĐNTT-Bao bì</td>
-                                        <td>Đề nghị thanh toán</td>
-                                        <td>Bao bì</td>
-                                        <td>18-06-2025</td>
-                                        <td>Lã Anh Chiến</td>
-                                    </tr>
-                                    <tr data-index="43">
-                                        <td>44</td>
-                                        <td><a href="chitiet-vanban.html?id=107005">Đề nghị thanh toán dầu</a>
-                                        </td>
-                                        <td>10465/2025/ĐNTT-Bao bì</td>
-                                        <td>Đề nghị thanh toán</td>
-                                        <td>Bao bì</td>
-                                        <td>18-06-2025</td>
-                                        <td>Lã Anh Chiến</td>
-                                    </tr>
-                                    <tr data-index="44">
-                                        <td>45</td>
-                                        <td><a href="chitiet-vanban.html?id=107391">PB2 - TB nhắc nhở CBCNV vi
-                                                phạm Nội Quy (QL vật sắc nhọn)</a></td>
-                                        <td>10464/2025/TB-PB2</td>
-                                        <td>Thông báo</td>
-                                        <td>PB2</td>
-                                        <td>18-06-2025</td>
-                                        <td>Phạm Thanh Tuấn</td>
-                                    </tr>
-                                    <tr data-index="45">
-                                        <td>46</td>
-                                        <td><a href="chitiet-vanban.html?id=106656">QUYẾT ĐỊNH VV BAN HÀNH QUY
-                                                TRÌNH QUẢN LÝ KIM LOẠI VÀ AN TOÀN SẢN PHẨM 2025</a></td>
-                                        <td>10463/2025/QĐ-TNG</td>
-                                        <td>Quyết định</td>
-                                        <td>VPCT</td>
-                                        <td>18-06-2025</td>
-                                        <td>Đoàn Thị Thu</td>
-                                    </tr>
-                                    <tr data-index="46">
-                                        <td>47</td>
-                                        <td><a href="chitiet-vanban.html?id=107271">TTR SẮP XẾP NHÂN SỰ CNM
-                                                PHÚ BÌNH 3</a></td>
-                                        <td>10462/2025/TTr-PB4</td>
-                                        <td>Tờ trình</td>
-                                        <td>PB4</td>
-                                        <td>18-06-2025</td>
-                                        <td>Trương Thị Giang Thức</td>
-                                    </tr>
-                                    <tr data-index="47">
-                                        <td>48</td>
-                                        <td><a href="chitiet-vanban.html?id=107186">ĐNTT Chi phí CPN Viettel
-                                                T5.2025</a></td>
-                                        <td>10461/2025/ĐNTT-PB1</td>
-                                        <td>Đề nghị thanh toán</td>
-                                        <td>PB1</td>
-                                        <td>18-06-2025</td>
-                                        <td>Phan Thị Cúc</td>
-                                    </tr>
-                                    <tr data-index="48">
-                                        <td>49</td>
-                                        <td><a href="chitiet-vanban.html?id=107403">Tờ trình chỉ thầu và quyết
-                                                định chỉ thầu hạng mục thi công: Sơn lại tường nhà xưởng. các kho - Chi
-                                                nhánh may Phú Bình 1</a></td>
-                                        <td>10460/2025/TTr-PB1</td>
-                                        <td>Tờ trình</td>
-                                        <td>PB1</td>
-                                        <td>18-06-2025</td>
-                                        <td>Phan Thị Cúc</td>
-                                    </tr>
-                                    <tr data-index="49">
-                                        <td>50</td>
-                                        <td><a href="chitiet-vanban.html?id=107326">PB1 - Tờ trình mua Phụ
-                                                Tùng - Phồn Thịnh -T6-2025</a></td>
-                                        <td>10459/2025/TTr-PB1</td>
-                                        <td>Tờ trình</td>
-                                        <td>PB1</td>
-                                        <td>18-06-2025</td>
-                                        <td>Phan Thị Cúc</td>
+                                        <td style="text-align: center; width: 100px; ">14-05-2025</td>
+                                        <td><button class="btn btn-xs rounded-pill"
+                                                style="background:#ffffff;color:#000000">Văn bản mới</button></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1399,7 +951,7 @@
                             <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
                             <li class="page-item"><a class="page-link" href="javascript:void(0);">Sau</a></li>
                         </ul>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -1408,114 +960,227 @@
         <div class="modal fade" id="largeModal" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
-                    <form id="frmData" class="validate-form" data-parsley-validate>
+                    <form enctype="multipart/form-data" id="frmData" data-parsley-validate>
                         <div class="modal-header">
-                            <h4 class="title" id="largeModalLabel">Thêm mới văn bản nội bộ</h4>
+                            <h4 class="title" id="largeModalLabel">Thêm mới</h4>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">
-                            <input name="__RequestVerificationToken" type="hidden"
-                                value="bvCRlDy6SzEgX6M0phIql70Rh45Nx4tZ1hZsTGjCekp0zuoH3PMLQ_-fq1XupCcSn7ZGqQPSz23V9Umw7dKYyBvDu7NkmJULHIs5P7aDQA01">
-
                             <div class="form-horizontal">
+
+                                <!-- Tên công văn -->
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <label class="control-label">Dạng văn bản *</label>
-                                        <select class="form-control" name="isUpload" onchange="ChangeType()" required
-                                            data-parsley-required-message="Vui lòng chọn dạng văn bản">
-                                            <option value="false">Văn bản mới</option>
-                                            <option value="true">Văn bản đã có</option>
+                                        <label class="control-label">Tên công văn *</label>
+                                        <input type="text" class="form-control" id="TenVanBan" name="TenVanBan" required
+                                            data-parsley-required-message="Vui lòng nhập tên công văn">
+                                    </div>
+                                </div>
+
+                                <!-- Số công văn + Ngày công văn -->
+                                <div class="row form-group">
+                                    <div class="col-md-6">
+                                        <label class="control-label">Số công văn *</label>
+                                        <input type="text" class="form-control" id="SoCongVan" name="SoCongVan" required
+                                            data-parsley-required-message="Vui lòng nhập số công văn">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label">Ngày công văn *</label>
+                                        <div class="input-group date date-left" data-date-autoclose="true"
+                                            data-provide="datepicker">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary" type="button"><i
+                                                        class="fa fa-calendar"></i></button>
+                                            </div>
+                                            <input type="text" name="NgayCongVan" class="form-control" required
+                                                data-parsley-required-message="Vui lòng chọn ngày công văn">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Đơn vị ban hành + Loại văn bản -->
+                                <div class="row form-group">
+                                    <div class="col-md-6">
+                                        <label class="control-label">Đơn vị ban hành *</label>
+                                        <input type="text" class="form-control" name="tenCoQuan" list="lCoQuan" required
+                                            data-parsley-required-message="Vui lòng chọn đơn vị">
+                                        <datalist id="lCoQuan"></datalist>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label">Loại văn bản</label>
+                                        <div class="c_multiselect">
+                                            <select name="iddmLoaiVanBan"
+                                                class="form-control single-selection multiselect-custom">
+                                                <option value="63">Quy trình</option>
+                                                <option value="71">Quy chế</option>
+                                                <option value="79">Phiếu xin ý kiến</option>
+                                                <option value="80">Giấy đi đường</option>
+                                                <option value="81">Lịch đặt xe</option>
+                                                <option value="84">Phân công nhiệm vụ</option>
+                                                <option value="85">Chương trình</option>
+                                                <option value="86">Đơn xin nghỉ phép</option>
+                                                <option value="55">Đề nghị thanh toán</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Nơi nhận -->
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Nơi nhận *</label>
+                                        <select name="idBoPhanNhan" class="form-control select2" required
+                                            data-parsley-required-message="Vui lòng chọn nơi nhận">
+                                            <option value="51">Phòng Tư vấn - Giám sát</option>
+                                            <option value="49">Phòng Thí nghiệm - Kiểm định</option>
+                                            <!-- ... -->
                                         </select>
                                     </div>
                                 </div>
 
+                                <!-- Ngày tiếp nhận + Loại văn bản đến -->
                                 <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label class="control-label">Người phê duyệt *</label>
-                                        <input class="form-control" id="NguoiPheDuyet" name="NguoiPheDuyet" type="text"
-                                            required data-parsley-required-message="Vui lòng nhập người phê duyệt">
-                                    </div>
-                                </div>
-
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label class="control-label">Ngày phê duyệt *</label>
+                                    <div class="col-md-6">
+                                        <label class="control-label">Ngày tiếp nhận *</label>
                                         <div class="input-group date date-left" data-date-autoclose="true"
                                             data-provide="datepicker">
                                             <div class="input-group-append">
                                                 <button class="btn btn-outline-secondary" type="button"><i
                                                         class="fa fa-calendar"></i></button>
                                             </div>                                            
-                                            <input type="text" name="NgayPheDuyet" class="form-control" required
-                                                data-parsley-required-message="Vui lòng chọn ngày phê duyệt">
+                                            <input type="text" name="NgayTiepNhan" class="form-control" required
+                                                data-parsley-required-message="Vui lòng chọn ngày tiếp nhận">
                                         </div>
-
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label">Loại văn bản đến</label>
+                                        <input type="text" class="form-control" list="NguonVanBans" name="NguonVanBan">
+                                        <datalist id="NguonVanBans">
+                                            <option value="File scan: ">
+                                            <option value="Bản giấy: ">
+                                        </datalist>
                                     </div>
                                 </div>
 
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label class="control-label">Trích yếu văn bản *</label>
-                                        <input class="form-control" id="TenVanBan" name="TenVanBan" type="text" required
-                                            data-parsley-required-message="Vui lòng nhập trích yếu văn bản">
+                                <!-- Tài liệu -->
+                                <div class="form-group">
+                                    <label class="control-label">File scan *</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="form-control" id="TaiLieu" name="files" accept=".pdf"
+                                            required data-parsley-required-message="Vui lòng chọn file scan (.pdf)"
+                                            data-parsley-fileextension='pdf'>
                                     </div>
+                                    <ul id="DanhSachTaiLieu" class="mt-2"></ul>
                                 </div>
 
+                                <!-- Người nhận -->
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <label class="control-label">Đơn vị ban hành</label>
+                                        <label class="control-label">Người nhận</label>
                                         <div class="c_multiselect">
-                                            <select name="idBoPhanPhatHanh" class="form-control single-selection multiselect-custom">
-                                                <option value="">Không có</option>
-                                                <option value="51">Phòng Tư vấn - Giám sát</option>
-                                                <option value="49">Phòng Thí nghiệm - Kiểm định</option>
-                                                <option value="47">Phòng Thi công</option>
-                                                <option value="50">Phòng Sales &amp; Maketing</option>
-                                                <option value="44">Phòng Nhân Sự - Hành Chính</option>
-                                                <option value="48">Phòng Mua hàng - Vật Tư</option>
-                                                <option value="46">Phòng Khảo sát - Thiết kế</option>
-                                                <option value="45">Phòng Kế toán</option>
-                                                <option value="42">Hội đồng quản trị</option>
-                                                <option value="52">Đội Xây dựng</option>
-                                                <option value="56">Đội Thiết kế kiến trúc</option>
-                                                <option value="57">Đội thiết kế kết cấu</option>
-                                                <option value="58">Đội thiết kế điện nước</option>
-                                                <option value="55">Đội Khảo sát hiện trường</option>
-                                                <option value="54">Đội Hoàn thiện</option>
-                                                <option value="53">Đội Cơ điện</option>
-                                                <option value="43">Ban Giám Đốc</option>
+                                            <select class="form-control single-selection multiselect-custom"
+                                                name="DanhSachNguoiDuyet" multiple="">
+                                                <option value="admin">Admin | Quản trị viên</option>
+                                                <option value="anbud">Bùi Đình An | Nhân viên</option>
+                                                <option value="andah">Đặng Hương An | Nhân viên</option>
+                                                <option value="andon">Đỗ Ngọc An | Nhân viên</option>
+                                                <option value="anhdat">Đặng Thanh Anh | Thư ký</option>
+                                                <option value="anhdoh">Đỗ Hoài Anh | Trưởng phòng mua hàng</option>
+                                                <option value="anhom">Hồ Minh An | Nhân viên</option>
+                                                <option value="anhphq">Phạm Quang Anh | Kế toán trưởng</option>
+                                                <option value="anhpht">Phạm Thị Anh | Nhân viên logistics</option>
+                                                <option value="anhpv">Phương Văn Anh | </option>
+                                                <option value="anhvuh">Vũ Hữu Anh | Nhân viên nhân sự</option>
+                                                <option value="anhvup">Vũ Phương Anh | Trưởng nhóm khảo sát</option>
+                                                <option value="antrh">Trần Hữu An | Nhân viên</option>
+                                                <option value="anvuh">Vũ Hương An | Nhân viên</option>
+                                                <option value="binhbuq">Bùi Quốc Bình | Nhân viên</option>
+                                                <option value="binhdat">Đặng Thanh Bình | Nhân viên</option>
+                                                <option value="binhdoq">Đỗ Quốc Bình | Nhân viên</option>
+                                                <option value="binhhoh">Hồ Hải Bình | Nhân viên</option>
+                                                <option value="binhhon">Hoàng Ngọc Bình | Nhân viên</option>
+                                                <option value="binhngt">Nguyễn Thanh Bình | Nhân viên</option>
+                                                <option value="binhtrn">Trần Ngọc Bình | Nhân viên</option>
+                                                <option value="chaungh">Nguyễn Hương Châu | Nhân viên</option>
+                                                <option value="chaungm">Nguyễn Minh Châu | Nhân viên</option>
+                                                <option value="ducdah">Đặng Hữu Đức | Kỹ sư M&amp;E</option>
+                                                <option value="ducphb">Phạm Bảo Đức | Nhân viên mua hàng</option>
+                                                <option value="ducphh">Phạm Hoài Đức | Trưởng phòng</option>
+                                                <option value="dungdod">Đỗ Đình Dũng | Nhân viên</option>
+                                                <option value="dunghot">Hồ Thanh Dũng | Nhân viên</option>
+                                                <option value="dungled">Lê Đình Dũng | Nhân viên</option>
+                                                <option value="dungleq">Lê Quốc Dũng | Nhân viên</option>
+                                                <option value="duydoq">Đỗ Quang Duy | Công nhân kỹ thuật</option>
+                                                <option value="duyhoh">Hồ Hữu Duy | Nhân viên kiểm tra chất lượng
+                                                </option>
+                                                <option value="duylet">Lê Thị Duy | Kế toán viên</option>
+                                                <option value="hadoh">Đỗ Hữu Hà | Nhân viên</option>
+                                                <option value="haipm">Phạm Minh Hải | </option>
+                                                <option value="hanhdoq">Đỗ Quang Hạnh | Chuyên viên quảng cáo</option>
+                                                <option value="hanhdot">Đỗ Thị Hạnh | Kỹ thuật viên đo lường</option>
+                                                <option value="hanhhob">Hồ Bảo Hạnh | Kỹ sư kết cấu</option>
+                                                <option value="hanhhoh">Hồ Hữu Hạnh | Kiến trúc sư</option>
+                                                <option value="hanhngq">Nguyễn Quang Hạnh | Nhân viên chăm sóc khách
+                                                    hàng</option>
+                                                <option value="haphh">Phạm Hữu Hà | Nhân viên</option>
+                                                <option value="havum">Vũ Minh Hà | Nhân viên</option>
+                                                <option value="huongbuq">Bùi Quang Hương | Nhân viên marketing</option>
+                                                <option value="huongdom">Đỗ Minh Hương | Nhân viên pháp lý</option>
+                                                <option value="huongleb">Lê Bảo Hương | Kỹ sư giám sát</option>
+                                                <option value="huongngh">Nguyễn Hoài Hương | Trưởng phòng tư vấn
+                                                </option>
+                                                <option value="huongngt">Nguyễn Thị Hương | Nhân viên kiểm toán</option>
+                                                <option value="huongtrv">Trần Văn Hương | Chuyên viên tư vấn</option>
+                                                <option value="huongvh">Vũ Hữu Hương | Trưởng phòng kinh doanh</option>
+                                                <option value="huongvuh">Vũ Hoài Hương | Chỉ huy trưởng</option>
+                                                <option value="khanhdoh">Đỗ Hương Khánh | Nhân viên</option>
+                                                <option value="khanhdoq">Đỗ Quốc Khánh | Nhân viên</option>
+                                                <option value="khanhhov">Hoàng Văn Khánh | Nhân viên</option>
+                                                <option value="khanhngt">Nguyễn Thanh Khánh | Nhân viên</option>
+                                                <option value="landat">Đặng Thanh Lan | Nhân viên</option>
+                                                <option value="lanhot">Hồ Thanh Lan | Nhân viên</option>
+                                                <option value="namdab">Đặng Bảo Nam | Nhân viên hành chính</option>
+                                                <option value="namdan">Đặng Ngọc Nam | Nhân viên kho</option>
+                                                <option value="namdov">Đỗ Văn Nam | Nhân viên</option>
+                                                <option value="namhob">Hồ Bảo Nam | Kỹ sư khảo sát</option>
+                                                <option value="namhoh">Hồ Hoài Nam | Nhân viên tuyển dụng</option>
+                                                <option value="namleh">Lê Hải Nam | Nhân viên</option>
+                                                <option value="namphh">Phạm Hải Nam | Nhân viên</option>
+                                                <option value="namvh">Vũ Hoài Nam | Phó Giám đốc</option>
+                                                <option value="namvut">Vũ Thanh Nam | Kỹ sư xây dựng</option>
+                                                <option value="phonglev">Lê Văn Phong | Nhân viên</option>
+                                                <option value="phongphv">Phạm Văn Phong | Nhân viên</option>
+                                                <option value="phongvut">Vũ Thanh Phong | Nhân viên</option>
+                                                <option value="trangbun">Bùi Ngọc Trang | Nhân viên kiểm soát chất lượng
+                                                </option>
+                                                <option value="trangbuq">Bùi Quang Trang | Thủ quỹ</option>
+                                                <option value="trangdat">Đặng Thị Trang | Kỹ sư thí nghiệm</option>
+                                                <option value="trangdav">Đặng Văn Trang | Nhân viên công nợ</option>
+                                                <option value="tranglet">Lê Thị Trang | Nhân viên báo cáo</option>
+                                                <option value="tuandav">Đặng Văn Tuấn | Trưởng phòng kiểm định</option>
+                                                <option value="tuanhoh">Hồ Hữu Tuấn | Đội trưởng thi công</option>
+                                                <option value="tuanhon">Hồ Ngọc Tuấn | Nhân viên sales</option>
+                                                <option value="tuanhoq">Hoàng Quang Tuấn | Nhân viên phân tích mẫu
+                                                </option>
+                                                <option value="tuanhot">Hoàng Thanh Tuấn | Giám sát viên</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label class="control-label">Loại văn bản</label>
-                                        <div class="c_multiselect">
-                                            <select name="iddmLoaiVanBan" class="form-control">
-                                                <!-- Các option giữ nguyên -->
-                                                <option value="63">Quy trình</option>
-                                                ...
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-
-
                         </div>
                         <div class="modal-footer justify-content-between">
                             <button class="btn btn-danger" type="button" data-dismiss="modal">Hủy</button>
-                            
                             <button class="btn btn-primary" type="submit">
                                 <i class="fa fa-save" aria-hidden="true"></i> Lưu</button>
                         </div>
                     </form>
+
+
                 </div>
             </div>
         </div>
-
     </div>
     <!-- Javascript -->
     <script src="assets/bundles/libscripts.bundle.js"></script>
@@ -1527,7 +1192,6 @@
     <script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
     <script src="assets/bundles/mainscripts.bundle.js"></script>
     <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script src="assets/vendor/table-bootstrap/js/bootstrap-table.min.js"></script>
     <!-- bootstrap datepicker Plugin Js -->
     <script src="assets/vendor/parsleyjs/js/parsley.min.js"></script>
     <script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
@@ -1536,11 +1200,8 @@
     <script>
         $(function () {
             $('.validate-form').parsley();
-            $('.table-js').bootstrapTable();
         });
     </script>
-
-
 </body>
 
 </html>

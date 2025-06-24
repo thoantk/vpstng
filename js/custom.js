@@ -16,5 +16,8 @@ $(function() {
         $('.filterbutton').on('click', function() {
 		    $('body').addClass('offcanvas-right');
 	    });
+        $('.toogle-sidebar').on('click', function() {
+		    $('body').toggleClass('hidden-sidebar');
+	    });
     })
 })    

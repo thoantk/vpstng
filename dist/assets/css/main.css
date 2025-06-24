@@ -1925,7 +1925,7 @@ img{
     --primary-color: #59C4BC;
     --primary-color2: #33BAB0;
     --primary-color3: #8BCEC9;
-    --secondary-color: #637AAE;
+    --secondary-color: #17a2b8;
     --secondary-color2: #00ACEE;
     --link-color: #59C4BC;
     --primary-gradient: linear-gradient(45deg, #59C4BC, #637AAE)
@@ -3935,12 +3935,13 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .c_multiselect .btn-group {
-    width: 100%
+    width: 100%;
 }
 
 .c_multiselect .btn-group .btn {
     width: 100%;
-    text-align: left
+    text-align: left;
+    overflow: hidden;
 }
 
 .c_multiselect .dropdown-menu {
@@ -3958,7 +3959,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .c_multiselect .dropdown-toggle::after {
-    right: 15px;
+    right: 5px;
     position: absolute;
     top: 15px
 }
@@ -6518,7 +6519,7 @@ ul.list-justify.large-number span {
     margin-right: 20px
 }
 
-.m-b-20,.block-header,.media,.chat-widget li,.weather .city,.chart.easy-pie-chart-1,.profilepage_2 .profile-header .profile-image {
+.m-b-20,.block-header,.chat-widget li,.weather .city,.chart.easy-pie-chart-1,.profilepage_2 .profile-header .profile-image {
     margin-bottom: 20px
 }
 
@@ -8619,7 +8620,8 @@ hr {
     -moz-border-radius: 40px;
     border-radius: 40px;
     width: 40px;
-    border: 2px solid transparent
+    height: 40px;
+    object-fit: cover;
 }
 
 .right_chat .media .name {
