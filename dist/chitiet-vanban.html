@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/vendor/multi-select/css/multi-select.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendor/dropify/css/dropify.min.css">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -199,7 +200,7 @@
 
         <!-- main left menu -->
         <div id="left-sidebar" class="sidebar">
-            <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-arrow-left"></i></button>
+            <button type="button" class="btn-toggle-offcanvas btn btn-primary"><i class="fa fa-close"></i></button>
             <div class="sidebar-scroll">
                 <div class="user-account">
                     <img src="assets/images/user.jpg" class="rounded-circle user-photo" alt="User Profile Picture">
@@ -624,8 +625,8 @@
             <div class="container-fluid">
                 <div class="block-header">
                     <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-12">
-                            <h2  data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">VV CỬ CBNV ĐI ĐÁNH GIÁ NHÀ CUNG CẤP MÁY IN, MÁY QUÉT, THIẾT BỊ RFID TẠI HÀ NỘI
+                        <div class="col-md-8">
+                            <h2  data-bs-toggle="tooltip" data-bs-placement="top" title="VV CỬ CBNV ĐI ĐÁNH GIÁ NHÀ CUNG CẤP MÁY IN, MÁY QUÉT, THIẾT BỊ RFID TẠI HÀ NỘI">VV CỬ CBNV ĐI ĐÁNH GIÁ NHÀ CUNG CẤP MÁY IN, MÁY QUÉT, THIẾT BỊ RFID TẠI HÀ NỘI
                             </h2>
                             <div style="color: var(--text-muted);">
                                 <span>Quách Thị Thúy Thúy</span><span class="delimiter"> - </span>
@@ -634,7 +635,7 @@
                                 <span style="color:#2a6eb7">Nguồn: Văn phòng số</span><span><i class="fa fa-star-o pl-1" onclick="VanBanNoiBo.DanhDauSao(107272, this)" style="color:red"></i></span>
                             </div> 
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 list-btn-CV">
+                        <div class="col-md-4 list-btn-CV">
                             <div class="list-btn-CV">
                                 <div class="page_action gap8 d-flex flex-wrap align-items-center justify-content-end">
                                     <button class="btn btn-primary">
@@ -643,6 +644,9 @@
                                     <button class="btn btn-outline-secondary">
                                         <span class="label">2. Bộ phận nhận</span>
                                     </button>
+                                    <button class="btn btn-info" data-toggle="modal" data-target="#trinhlanhdao">
+                                        <i class="fa fa-send" aria-hidden="true"></i><span class="label sm-hidden"> Gửi Thẩm định</span>
+                                    </button>                                   
                                     <button type="button" class="btn btn-outline-primary toogle-sidebar"><i class="fa fa-bars"></i></button>
                                 </div>
                             </div>
@@ -650,7 +654,7 @@
                     </div>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-lg-9 col-md-12 left-box">
+                    <div class="col-xl-9 col-lg-8 col-md-12 left-box">
                         <div class="card read_word">                           
                             <div class="body">
                                 <div class="img-post">
@@ -660,11 +664,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12 right-box">
+                    <div class="col-xl-3 col-lg-4 col-md-12 right-box">
                         <div class="card mb-3">
                             <div class="click_toggle header d-flex align-items-center justify-content-between active">
                                 <h2>Thông tin văn bản</h2>
-                                <span><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+                                <div>
+                                    <button type="button" class="btn btn-danger btn-sm js-sweetalert" data-type="confirm" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                    <button type="button" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
+                                </div>
                             </div>
                             <div class="body">
                                 <table>
@@ -682,10 +689,21 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th><i class="fa fa-user-circle fa-fw"></i> Đơn vị phát hành</th>
+                                            <th><i class="fa fa-calendar fa-fw"></i> Ngày phê duyệt</th>
+                                            <td>
+                                                27-03-2025
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class="icon-users"></i> Đơn vị phát hành</th>
                                             <td>
                                                 <span>BGD - Ban Giám Đốc</span>
-
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class="icon-user"></i> Người phê duyệt</th>
+                                            <td>
+                                                <span>Phạm Minh Hải</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -700,8 +718,27 @@
                         </div>
                         <div class="card mb-3">
                             <div class="click_toggle header d-flex align-items-center justify-content-between active">
+                                <h2>Tài liệu đính kèm</h2>
+                                <div>
+                                    <button type="button"  data-target="#uploadtailieu" data-toggle="modal" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-upload"></i></button>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="file-card">
+                                    <i class="fa fa-file-pdf"></i><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    scan-vanban-01.pdf
+                                    <button class="btn btn-smdơ"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                    <button class="btn btn-sm"><i class="fa fa-download"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="click_toggle header d-flex align-items-center justify-content-between active">
                                 <h2>Người duyệt</h2>
-                                <span><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+                                <div>
+                                    <button type="button" data-target="#themnguoi" data-toggle="modal" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-plus"></i></button>
+                                </div>
                             </div>
                             <div class="body">
                                 <ul class="right_chat list-unstyled li_animation_delay mb-0">
@@ -735,7 +772,7 @@
                         <div class="card mb-3">
                             <div class="click_toggle header d-flex align-items-center justify-content-between active">
                                 <h2>Người thẩm định</h2>
-                                <span><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+                                <div><button type="button" data-target="#themnguoi" data-toggle="modal" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-plus"></i></button></div>
                             </div>
                             <div class="body">
                                 <ul class="right_chat list-unstyled li_animation_delay mb-0">
@@ -754,11 +791,125 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="card mb-0">
+                            <div class="click_toggle header d-flex align-items-center justify-content-between active">
+                                <h2>Tài khoản theo dõi</h2>
+                                <div>
+                                    <button type="button" data-target="#themnguoi" data-toggle="modal" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <ul class="right_chat list-unstyled li_animation_delay mb-0">
+                                    <li class="item-user">
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <img class="media-object " src="assets/images/user-icon-df.png" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Phạm Minh Hải</span>
+                                                    <span class="message d-flex gap8 justify-content-space-between">Giám đốc TRE<span class="float-right">32 hours ago
+                                                    <i class="fa fa-check text-success"></i></span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>                       
+                                    <li class="item-user">
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <img class="media-object " src="assets/images/user-icon-df.png" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Nguyễn Việt Toàn <small class="float-right">15:00</small></span>
+                                                    <span class="message d-flex gap8 justify-content-space-between">Giám đốc May<span class="float-right">19/06/2025 
+                                                    <i class="fa fa-check text-success"></i></span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>                       
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- Large Size -->
+        <div class="modal fade" id="themnguoi" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <form id="frmData" class="validate-form" data-parsley-validate>
+                        <div class="modal-header">
+                            <h4 class="title" id="largeModalLabel">Thêm người [chức năng]</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-horizontal">
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Bộ phận nhận</label>
+                                        <div class="c_multiselect">
+                                            <select class="form-control single-selection multiselect-custom" name="idBoPhanNhan">
+                                                <option value="59">&nbsp;Chi nhánh Giải pháp công nghệ TRE | TRE</option>
+                                                <option value="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ban Giám Đốc | BGD</option>
+                                                <option value="61">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Kinh doanh và Marketing | P.KD</option>
+                                                <option value="62">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Phát triển ứng dụng | P.PTUD</option>
+                                                <option value="63">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Công nghệ Phần mềm | P.CNPM</option>
+                                                <option value="64">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Quản trị mạng | P.QTM</option>
+                                                <option value="65">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Triển khai ERP | P.TKERP</option>
+                                                <option value="66">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Kiểm thử phần mềm | P.KTPM</option>
+                                                <option value="67">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Tổng hợp | P.TH</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Người duyệt</label>
+                                        <div class="c_multiselect">
+                                            <select name="NhanVienDuyet" class="form-control" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                <option value="levi" data-cv="PTGĐ Công nghệ cao">Lê Xuân Vĩ  | PTGĐ Công nghệ cao | TRE | levi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button class="btn btn-danger" type="button" data-dismiss="modal">Hủy</button>                            
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fa fa-save" aria-hidden="true"></i> Lưu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+        <div class="modal fade" id="uploadtailieu" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <form id="frmData" class="validate-form" data-parsley-validate>
+                        <div class="modal-header">
+                            <h4 class="title" id="largeModalLabel">Upload tài liệu đính kèm</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-horizontal">
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Chọn file</label>
+                                        <input type="file" class="dropify">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button class="btn btn-danger" type="button" data-dismiss="modal">Hủy</button>                            
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fa fa-save" aria-hidden="true"></i> Lưu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>         
+    </div>   
     <!-- Javascript -->
     <script src="assets/bundles/libscripts.bundle.js"></script>
     <script src="assets/bundles/vendorscripts.bundle.js"></script>
@@ -772,17 +923,17 @@
     <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
     <!-- bootstrap datepicker Plugin Js -->
     <script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
-    <script src="assets/vendor/ckeditor/ckeditor.js"></script> <!-- Ckeditor -->
+    <script src="assets/vendor/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js --> 
+    <script src="../js/pages/ui/dialogs.js"></script>
+    <script src="assets/vendor/dropify/js/dropify.min.js"></script>
+    <script src="../js/pages/forms/dropify.js"></script>
     <script src="../js/custom.js"></script>
     <script>
-        $('.click_toggle').click(function(){
-            $(this).next().slideToggle();
-            $(this).toggleClass('active')
-        })
-        // setTimeout(() => {
-        // $('.btn-toggle-fullwidth').trigger('click')
-            
-        // }, 500);
+        // $('.click_toggle').click(function(){
+        //     $(this).next().slideToggle();
+        //     $(this).toggleClass('active')
+        // })
+        
     </script>
 
 

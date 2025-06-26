@@ -3204,7 +3204,7 @@ html.fullscreen-bg,html.fullscreen-bg body,html.fullscreen-bg #wrapper {
     display: block;
     position: absolute;
     left: 230px;
-    top: 24px;
+    top: 10px;
     outline: 0;
     border: 0
 }
@@ -3845,8 +3845,8 @@ label {
     color: var(--font-white)
 }
 
-.multiselect-custom+.btn-group ul.multiselect-container>li:hover {
-    background-color: var(--body-color)
+.multiselect-custom+.btn-group ul.multiselect-container>li:hover,.multiselect-custom+.btn-group ul.multiselect-container>li.active {
+    background-color: var(--primary-color)
 }
 
 .multiselect-search {
