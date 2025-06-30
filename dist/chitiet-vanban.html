@@ -666,11 +666,11 @@
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-12 right-box">
                         <div class="card mb-3">
-                            <div class="click_toggle header d-flex align-items-center justify-content-between active">
-                                <h2>Thông tin văn bản</h2>
+                            <div class=" header d-flex align-items-center justify-content-between">
+                                <h2 class="click_toggle active">Thông tin văn bản <i class="fa fa-plus"></i><i class="fa fa-minus"></i></h2>
                                 <div>
                                     <button type="button" class="btn btn-danger btn-sm js-sweetalert" data-type="confirm" title="Delete"><i class="fa fa-trash-o"></i></button>
-                                    <button type="button" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
+                                    <button type="button" class="btn btn-primary btn-sm" title="Edit"  data-target="#updatevanban" data-toggle="modal"  ><i class="fa fa-edit"></i></button>
                                 </div>
                             </div>
                             <div class="body">
@@ -717,25 +717,52 @@
                             </div>
                         </div>
                         <div class="card mb-3">
-                            <div class="click_toggle header d-flex align-items-center justify-content-between active">
-                                <h2>Tài liệu đính kèm</h2>
+                            <div class=" header d-flex align-items-center justify-content-between">
+                                <h2 class="click_toggle active">Tài liệu đính kèm <i class="fa fa-plus"></i><i class="fa fa-minus"></i></h2>
                                 <div>
                                     <button type="button"  data-target="#uploadtailieu" data-toggle="modal" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-upload"></i></button>
                                 </div>
                             </div>
-                            <div class="body">
-                                <div class="file-card">
-                                    <i class="fa fa-file-pdf"></i><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                                    scan-vanban-01.pdf
-                                    <button class="btn btn-smdơ"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                    <button class="btn btn-sm"><i class="fa fa-download"
-                                            aria-hidden="true"></i></button>
+                            <div class="body right_chat ">
+                                <div class="item-user fileScan">
+                                    <a href="javascript:void(0);">
+                                        <div class="media">
+                                            <div class="media-object"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></div>
+                                            <div class="media-body d-flex gap8 justify-content-space-between">
+                                                <div>
+                                                    <div class="name">CV-Nguyen thi kim thoa.pdf</div>
+                                                    <span class="message">24-06-2025 <span class="">Nguyễn Thị Kim Thoa</span>
+                                                </div>
+                                                <div>
+                                                    <button type="button" class="btn btn-danger btn-sm js-sweetalert" data-type="confirm" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                                    <button type="button" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-download"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item-user fileScan">
+                                    <a href="javascript:void(0);">
+                                        <div class="media">
+                                            <div class="media-object"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></div>
+                                            <div class="media-body d-flex gap8 justify-content-space-between">
+                                                <div>
+                                                    <div class="name">CV-Nguyen thi kim thoa.pdf</div>
+                                                    <span class="message">24-06-2025 <span class="">Nguyễn Thị Kim Thoa</span>
+                                                </div>
+                                                <div>
+                                                    <button type="button" class="btn btn-danger btn-sm js-sweetalert" data-type="confirm" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                                    <button type="button" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-download"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="card mb-3">
-                            <div class="click_toggle header d-flex align-items-center justify-content-between active">
-                                <h2>Người duyệt</h2>
+                            <div class="header d-flex align-items-center justify-content-between">
+                                <h2 class="click_toggle active">Người duyệt <i class="fa fa-plus"></i><i class="fa fa-minus"></i></h2>
                                 <div>
                                     <button type="button" data-target="#themnguoi" data-toggle="modal" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-plus"></i></button>
                                 </div>
@@ -770,8 +797,8 @@
                             </div>
                         </div>
                         <div class="card mb-3">
-                            <div class="click_toggle header d-flex align-items-center justify-content-between active">
-                                <h2>Người thẩm định</h2>
+                            <div class="click_toggle header d-flex align-items-center justify-content-between">
+                                <h2 class="click_toggle active">Người thẩm định <i class="fa fa-plus"></i><i class="fa fa-minus"></i></h2>
                                 <div><button type="button" data-target="#themnguoi" data-toggle="modal" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-plus"></i></button></div>
                             </div>
                             <div class="body">
@@ -792,8 +819,8 @@
                             </div>
                         </div>
                         <div class="card mb-0">
-                            <div class="click_toggle header d-flex align-items-center justify-content-between active">
-                                <h2>Tài khoản theo dõi</h2>
+                            <div class="header d-flex align-items-center justify-content-between">
+                                <h2 class="click_toggle active">Tài khoản theo dõi<i class="fa fa-plus"></i><i class="fa fa-minus"></i></h2>
                                 <div>
                                     <button type="button" data-target="#themnguoi" data-toggle="modal" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-plus"></i></button>
                                 </div>
@@ -832,6 +859,102 @@
             </div>
         </div>
         <!-- Large Size -->
+        <div class="modal fade" id="updatevanban" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <form id="frmData" class="validate-form" data-parsley-validate>
+                        <div class="modal-header">
+                            <h4 class="title" id="largeModalLabel">Cập nhật [loại văn bản]</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <input name="__RequestVerificationToken" type="hidden" value="j9tXGQH-C-ZOcllVf4Z69YuUPBNOEo-sBNN8MZtqYk7XpWFZzIgL8WXNH-X4QDIK0Pexv3rNN2zyuuTgGvZZ9AAVC1vZ31wkOhPOai-vox01">
+                            <div class="form-horizontal">
+                                
+                                <input data-val="true" data-val-number="The field ID must be a number." data-val-required="The ID field is required." id="ID" name="ID" type="hidden" value="84">
+                                <div class="row form-group">
+                                    <label class="control-label col-md-12">Tên văn bản</label>
+                                    <div class="col-md-12">
+                                        <input class="form-control text-box single-line" id="TenVanBan" name="TenVanBan" type="text" value="Văn bản test 1">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label class="control-label col-md-12">Loại văn bản</label>
+                                    <div class="col-md-12">
+                                        <select name="iddmLoaiVanBan" class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                <option value="63">Quy trình</option>
+                                                <option value="71">Quy chế</option>
+                                                <option value="79">Phiếu xin ý kiến</option>
+                                                <option value="80">Giấy đi đường</option>
+                                                <option value="81">Lịch đặt xe</option>
+                                                <option value="84">Phân công nhiệm vụ</option>
+                                                <option value="85">Chương trình</option>
+                                                <option value="86">Đơn xin nghỉ phép</option>
+                                                <option value="55">Đề nghị thanh toán</option>
+                                                <option value="56">Đề nghị</option>
+                                                <option value="57">Quy định</option>
+                                                <option value="59">Thông tri</option>
+                                                <option value="60">Hướng dẫn</option>
+                                                <option value="19">Quyết định</option>
+                                                <option value="20" selected="">Thông báo</option>
+                                                <option value="21">Tờ trình</option>
+                                                <option value="45">Nghị quyết</option>
+                                                <option value="61">Biên bản xét thầu</option>
+                                                <option value="53">Công văn</option>
+                                                <option value="46">Hợp đồng</option>
+                                                <option value="47">Phương án</option>
+                                                <option value="48">Kế hoạch</option>
+                                                <option value="49">Báo cáo</option>
+                                                <option value="50">Giấy ủy quyền</option>
+                                                <option value="51">Biên bản</option>
+                                                <option value="52">Giấy mời</option>
+                                                <option value="54">Chỉ thị</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label class="control-label col-md-12">Đơn vị phát hành</label>
+                                    <div class="col-md-12">
+                                        <select name="idBoPhanPhatHanh" class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                                                                <option value="59">&nbsp;Chi nhánh Giải pháp công nghệ TRE</option>
+                                                    <option value="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ban Giám Đốc</option>
+                                                    <option value="61">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Kinh doanh và Marketing</option>
+                                                    <option value="62" selected="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Phát triển ứng dụng</option>
+                                                    <option value="63">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Công nghệ Phần mềm</option>
+                                                    <option value="64">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Quản trị mạng</option>
+                                                    <option value="65">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Triển khai ERP</option>
+                                                    <option value="66">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Kiểm thử phần mềm</option>
+                                                    <option value="67">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phòng Tổng hợp</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Chế độ hiển thị</label>
+                                        <select class="form-control select2 select2-hidden-accessible" name="isPublic" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                            <option value="1">Công khai</option>
+                                            <option value="false">Không công khai</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label class="control-label col-md-12">Ghi chú</label>
+                                    <div class="col-md-12">
+                                        <input class="form-control text-box single-line" id="GhiChu" name="GhiChu" type="text" value="test ghi chú">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button class="btn btn-danger" type="button" data-dismiss="modal">Hủy</button>                            
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fa fa-save" aria-hidden="true"></i> Lưu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>          
         <div class="modal fade" id="themnguoi" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -929,11 +1052,10 @@
     <script src="../js/pages/forms/dropify.js"></script>
     <script src="../js/custom.js"></script>
     <script>
-        // $('.click_toggle').click(function(){
-        //     $(this).next().slideToggle();
-        //     $(this).toggleClass('active')
-        // })
-        
+        $('.click_toggle').click(function(){
+            $(this).parent().next().slideToggle();
+            $(this).toggleClass('active')
+        })        
     </script>
 
 

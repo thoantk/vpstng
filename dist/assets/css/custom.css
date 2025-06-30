@@ -183,7 +183,7 @@
     top:0;
     transition: all ease-in-out 1s;
 }
-/* .click_toggle{
+.click_toggle{
     cursor: pointer;
 }
 .click_toggle.active .fa-plus{
@@ -191,7 +191,7 @@
 }
 .click_toggle:not(.active) .fa-minus{
     display: none;
-} */
+}
 .right-box tr+tr th, .right-box tr+tr td{  
    border-top: solid 1px var(--border-color);
 }  
@@ -200,6 +200,13 @@
 }
 .right-box th{    
     padding: 10px 10px 10px 0;
+}
+.right-box .btn-sm{
+    width: 30px;
+    height: 30px;
+}
+.fileScan .media-object .fa{
+    font-size: 40px;
 }
 .multiselect-container .input-group{
     margin: 5px 0;
